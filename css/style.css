@@ -1,0 +1,129 @@
+
+
+
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--secondary-bg);
+    margin-top: 3px;
+    border-top: solid .01rem #515151;
+    margin-bottom: 3px;
+}
+
+.post .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post .profile .left-side, .profile .right-side {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 5px;
+}
+
+.post .profile .left-side span p {
+    font-weight: 100;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: solid 2px;
+    padding-top: 10px;
+}
+
+.post .profile .left-side img {
+    width: 100%;
+}
+.follow{
+    color: #3155f1;
+    padding-left: 5px;
+}
+.follow-up{
+    color: #BCC0C4;
+    padding-left: 5px;
+}
+.post-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    font-size: 14px;
+}
+
+.post-content span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+.post-content span p {
+    margin-left: 54px;
+}
+.post-content span i {
+    position: absolute;
+    background-color: #3155f1;
+    border-radius: 50%;
+    font-size: 13px;
+    border: solid 2px var(--primary-bg);
+}
+
+.post-content span i:nth-child(1) {
+    z-index: 3;
+}
+
+.post-content span i:nth-child(2) {
+    margin-left: 15px;
+    z-index: 2;
+}
+
+.post-content span i:nth-child(3) {
+    margin-left: 25px;
+    z-index: 1;
+}
+
+.post-content img {
+    width: 90%;
+    height: 40  0px;
+    align-self: center;
+}
+
+.liked {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.liked .liked-icon {
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.liked-icon .fa-comment {
+    transform-origin: center;
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width:500px) {
+    
+}

@@ -1,0 +1,64 @@
+section{
+    padding: 0px 20px;
+ }
+ h1{
+    margin-bottom: 20px;
+ }
+ .users-online{
+    width: 100%;
+    margin-bottom: 20px;
+ }
+ .users-online .list-users{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+ }
+ .users-online .list-users::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+}
+ .users-online .list-users div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+ }
+ .users-online .list-users div img{
+    height:80px;
+    margin: 5px;
+    margin-bottom: 0px;
+    border-radius: 100%;
+    border: 1px solid white;
+ }
+ .users-online .list-users div i{
+    position: relative;
+    top: -30px;
+    right: -35px;
+    font-size: 12px;
+    color: var(--green55);
+ }
+
+.user{
+    width: 100%;
+    height: fit-content;
+}
+.user a img{
+    height: 50px;
+    border-radius: 100%;
+}
+.user a {
+    display: flex;
+}
+.user a  div{
+   padding-left: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.user a  div p{
+  text-transform: capitalize;
+  font-size: small;
+}

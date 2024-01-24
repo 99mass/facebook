@@ -1,0 +1,38 @@
+* {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary-bg: rgb(27, 30, 34);
+    --primary-bg: #383838;
+    --second-blue:#3155f1;
+    --teal60: #00D4A1;
+    --green55: #00ED4F;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(20, 20, 20);
+    overflow-x: hidden;
+    margin-top: 130px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-bg);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-bg);
+    border-radius: 20px;
+}

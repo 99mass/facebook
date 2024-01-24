@@ -1,0 +1,33 @@
+section{
+    padding: 10px 20px;
+ }
+
+
+ .content-notif{
+    width: 100%;
+    height: 60px;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+    display: flex;
+    
+  }
+  .content-notif img{
+      width: 60px;
+      height: 60px;
+    border-radius: 100%;
+  
+  }
+ .details-notif{
+     height: 100%;
+     width: 100%;
+     padding-left: 10px;
+ 
+  }
+  .details-notif a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+  }
+ 
