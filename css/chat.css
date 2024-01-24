@@ -27,6 +27,7 @@ section{
     height: 100%;
  }
  .users-online .list-users div img{
+    width: 80px;
     height:80px;
     margin: 5px;
     margin-bottom: 0px;
@@ -44,21 +45,34 @@ section{
 .user{
     width: 100%;
     height: fit-content;
+    margin-bottom: 30px;
 }
 .user a img{
+    width: 50px;
     height: 50px;
     border-radius: 100%;
+    border: 0.1px solid white;
 }
 .user a {
     display: flex;
 }
 .user a  div{
+    width: 88%;
    padding-left: 10px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
 .user a  div p{
+   
   text-transform: capitalize;
   font-size: small;
+  /* text-wrap: nowrap; */
+}
+.user a  div p:last-of-type{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+
 }
