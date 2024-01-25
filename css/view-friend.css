@@ -1,0 +1,41 @@
+section{
+    padding: 10px;
+}
+p{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+p span:first-of-type{
+    font-size: 22px;
+    font-weight: 700;
+}
+p span:first-of-type a{
+  margin-right: 10px;
+}
+.content-list-friend{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+}
+.content-list-friend .bloc{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+ 
+}
+.content-list-friend .bloc img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.content-list-friend .bloc h4{
+    margin-top: 10px;
+    text-transform: capitalize;
+    text-align: center;
+}

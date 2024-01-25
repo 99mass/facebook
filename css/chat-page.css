@@ -1,0 +1,120 @@
+section{
+    padding: 0px 0px;
+ }
+
+ .receiver{
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid  white;
+ }
+ .fa-arrow-left{
+    font-size: 30px;
+ }
+
+ .receiver img,
+ .container-chat-message img{
+    width: 50px;
+    height: 50px;
+    margin:0px  10px;
+    border: 1px solid  white;
+    border-radius: 100%;
+ }
+ .container-chat-message{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+
+ .content-mes-receiver ,
+ .content-mes-sender {
+    margin-bottom: 20px;
+ }
+ .content-mes-receiver div{
+    display: flex;
+    align-items: center;
+
+ }
+ .content-mes-receiver div pre,
+ .content-mes-sender  pre{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    background: var(--primary-bg);
+    
+ }
+ 
+ .content-mes-receiver p{
+   margin-left: 80px;
+ }
+ .content-mes-sender{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+ }
+ .content-mes-sender pre{
+   background: var(--second-blue);
+ }
+ .content-mes-sender p,
+ .content-mes-receiver p{
+     font-size: small;
+ }
+ .fa-check-double{
+    margin-left: 5px;
+    color: gold;
+ }
+
+ .content-from-chat{
+     width: 100%;
+     height: 60px;
+     position: fixed;
+     bottom: 0;
+    
+     display: flex;
+     align-items: center;
+     border-top: 1px solid white;
+     background-color: black;
+     z-index: 100;
+ }
+ form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+ }
+
+ form textarea{ 
+    width: 70%;
+    height: 40px;
+    padding:10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: var(--primary-bg);
+    resize: none;
+    outline: none;
+ }
+ form textarea::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+form button{
+    background: transparent;
+    border: none;
+}
+form .emoji,
+form .fa-paper-plane{
+    font-size: 25px;
+    margin-left:  10px ;
+}
+form button{
+    margin-left:  20px ;
+}

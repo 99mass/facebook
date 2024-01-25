@@ -12,8 +12,11 @@
   margin-bottom: 20px;
   display: flex;
 }
-.content-friend img{
-    width: 25%;
+.content-friend a {
+  width: 25%;
+}
+.content-friend a img{
+    width: 100%;
     height: 100%;
   border-radius: 100%;
 
