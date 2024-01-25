@@ -12,9 +12,10 @@ hr{
     width: 100%;
     text-align: center;
 }
-.picture-actual h4{
+.picture-actual h2{
     text-transform: capitalize;
     width: 100%;
+    font-weight: initial;
     text-align: left;
 }
 .picture-actual img{
@@ -82,7 +83,14 @@ hr{
     .form-group span:first-of-type span:first-of-type{
         font-size: 18px;
     }
+    .identiti{
+        padding-right: 5px;
+        font-weight: bold;
+        font-size: 17px;
+        color: #7f7f7f;;
+    }
     .form-group .edit {
+        text-transform: capitalize;
         color: var(--second-blue);
     }
 
@@ -99,7 +107,38 @@ hr{
         padding-block: 0.7em;
         border: none;
         outline: none;
-        border-left: 1px solid #fff;
+        border-left: 5px solid var(--second-blue);
         box-shadow: 0 2px 4px #212121;
       }
-    
+      .group textarea{
+        height: 80px;
+      }
+    .group textarea::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        background: transparent;
+    }
+    .submit-update {
+       width: 100%;
+       margin-top: 40px;
+       text-align: center;
+    }
+
+    button {
+        font-size: 1rem;
+        align-items: center;
+        height: 48px;
+        border-radius: 0.4rem;
+        font-weight: 600;
+        padding: 0 1.2rem;
+        color: #ddd;
+        border: none;
+        cursor: pointer;
+        text-transform: capitalize;
+        box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15) !important;
+        background: #000000;
+      }
+      
+  
+
+      
