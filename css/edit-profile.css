@@ -92,6 +92,7 @@ hr{
     .form-group .edit {
         text-transform: capitalize;
         color: var(--second-blue);
+        cursor: pointer;
     }
 
     .input {

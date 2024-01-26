@@ -56,6 +56,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    
 }
 
 .top-content-icons i {
@@ -68,7 +69,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 .middle-content {
     display: flex;
@@ -84,7 +84,12 @@
 
 .middle-content i {
     font-size: 18px;
+    color: gray;
 }
+.middle-content i:hover {
+    color: #fff;
+}
+
 
 .middle-content .fa-home,.fa-user-friends,.fa-users, .fa-comment, .fa-bell {
     position: relative;
@@ -106,4 +111,52 @@ a{
 
 i {
     cursor: pointer;
+}
+.middle-content-0{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .main-header .top-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-header .top-content h3,
+    .main-header .top-content .top-content-icons{
+        width: 30%;
+    }
+    .main-header .top-content .top-content-icons{
+       display: flex;
+       justify-content: flex-end;
+    }
+    .top-content-icons {
+        gap: 0px;
+        
+    }
+    
+    .middle-content-1{
+        display: none;
+    }
+    .middle-content-0{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .group-link{
+        margin-left: 30px;
+    }
+   
+
+.middle-content i {
+    margin-left: 50px;
+    font-size: 30px;
+   
+}
+.middle-content i:first-of-type {
+    margin-left: 0px;
+}   
 }

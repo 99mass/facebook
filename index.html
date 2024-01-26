@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/friend.css">
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/header.css">
 
     <link rel="stylesheet" href="font-awesome/css/all.css">
     <title>Facebook </title>
 </head>
+
 <body>
 
     <!-- nav section -->
@@ -18,16 +23,24 @@
             <div class="main-header">
                 <div class="top-content">
                     <h3>facebook</h3>
+                    <div class="middle-content middle-content-0">
+                        <i class="active fas fa-home" title="Home"><span><a href="./index.html">25+</a></span></i>
+                        <i class="fas fa-user-friends" title="Friend Requests"><span><a href="./friend.html"> 4+</a></span></i>
+                        <i class="fas fa-comment" title="Chat"><span><a href="./chat.html"> 42</a></span></i>
+                        <i class="fas fa-bell" title="Notification"><span><a href="./notification.html"> 22+</a></span></i>
+                        <a href="./group.html" class="group-link" title="Groups"> <i class="fas fa-users"></i></a>
+                    </div>
                     <div class="top-content-icons">
                         <i class="fas fa-bars"></i>
                     </div>
                 </div>
-                <div class="middle-content">
-                    <i class="active fas fa-home"><span><a href="./index.html" >25+</a></span></i>
-                    <i class="fas fa-user-friends"><span><a href="./friend.html" > 4+</a></span></i>
-                    <i class="fas fa-comment"><span><a href="./chat.html" > 42</a></span></i>
-                    <i class="fas fa-bell"><span><a href="./notification.html" > 22+</a></span></i>
-                    <a href="./group.html" > <i class="fas fa-users"></i></a> 
+                <!-- a utliser sur les ecrans de moin de 768px  -->
+                <div class="middle-content middle-content-1">
+                    <i class="active fas fa-home"><span><a href="./index.html">25+</a></span></i>
+                    <i class="fas fa-user-friends"><span><a href="./friend.html"> 4+</a></span></i>
+                    <i class="fas fa-comment"><span><a href="./chat.html"> 42</a></span></i>
+                    <i class="fas fa-bell"><span><a href="./notification.html"> 22+</a></span></i>
+                    <a href="./group.html"> <i class="fas fa-users"></i></a>
                 </div>
             </div>
         </div>
@@ -35,187 +48,251 @@
 
     <!-- post section -->
     <section class="posts">
-        <div class="post post1">
-            <div class="profile">
-                <div class="left-side">
-                    <div class="profile-pic">
-                       <a href="./edit-profile.html"><img src="images/profile10.png" alt=""></a> 
-                    </div>
-                    <span><h3>Lions M .<span class="follow">Follow</span></h3><p>16m <sup>.</sup> <i class="fas fa-globe-africa"></i></p></span>
-                    
-                </div>
-                <div class="right-side">
-                    <i class="fas fa-ellipsis-h"></i>
-                    
-                </div>
-            </div>
-
-            <div class="post-content">
-                <p>The Lions 💯</p>
-                <img src="images/profile10.png" alt="">
-                <span class="icons">
-                    <i style="font-style: normal;">😄</i>
-                    <i style="font-style: normal;">👍</i>
-                    <i style="font-style: normal;">❤️</i>
-                    <p>Mickiey J and 15k others</p>
-                </span>
-            </div>
-
-            <div class="liked">
-                <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>15k</span></div>
-                <a href="./comment.html"><div class="liked-icon"><i class="far fa-comment"></i> <span>6k</span></div></a>
+        <!-- left menu -->
+        <div class="menu-left">
+            <div class="user-actual">
+                <a href="./profile.html">
+                    <img src="./images/feed7.png" alt="">
+                    <span>samba diop</span>
+                </a>
             </div>
         </div>
-        <div class="post post2">
-            <div class="profile">
-                <div class="left-side">
-                    <div class="profile-pic">
-                        <a href="./edit-profile.html"><img src="images/profile14.png" alt=""></a>
+
+        <!-- middle menu -->
+        <div class="menu-middle">
+            <div class="post post1">
+                <div class="profile">
+                    <div class="left-side">
+                        <div class="profile-pic">
+                            <a href="./profile.html"><img src="images/photo2.jpg" alt=""></a>
+                        </div>
+                        <span>
+                            <h3>Lions M .<span class="follow">Follow</span></h3>
+                            <p>16m <sup>.</sup> <i class="fas fa-globe-africa"></i></p>
+                        </span>
+
                     </div>
-                    <span><h3>Freddy fred .<span class="follow-up">Follow(up)</span></h3><p>1m <sup>.</sup> <i class="fas fa-globe-africa"></i></p></span>
+                    <div class="right-side">
+                        <i class="fas fa-ellipsis-h"></i>
+
+                    </div>
                 </div>
-                <div class="right-side">
-                    <i class="fas fa-ellipsis-h"></i>
-                    
+                <div class="post-content-text">
+                    <pre>The Lions 💯 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus minima, quod nulla incidunt illum itaque esse fugit! Aspernatur earum, eaque adipisci facilis mollitia eos exercitationem ex porro, consequatur quibusdam perspiciatis.</pre>
+                </div>
+                <div class="post-content">
+
+                    <img src="images/photo2.jpg" alt="">
+                </div>
+
+                <div class="liked">
+                    <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>15k</span></div>
+                    <a href="./comment.html">
+                        <div class="liked-icon"><i class="far fa-comment"></i> <span>6k</span></div>
+                    </a>
                 </div>
             </div>
+            <div class="post post2">
+                <div class="profile">
+                    <div class="left-side">
+                        <div class="profile-pic">
+                            <a href="./profile.html"><img src="images/photo1.jpg" alt=""></a>
+                        </div>
+                        <span>
+                            <h3>Freddy fred .<span class="follow-up">Follow(up)</span></h3>
+                            <p>1m <sup>.</sup> <i class="fas fa-globe-africa"></i></p>
+                        </span>
+                    </div>
+                    <div class="right-side">
+                        <i class="fas fa-ellipsis-h"></i>
 
-            <div class="post-content">
-                <p>Hello friends 🖐️</p>
-                <img src="images/profile14.png" alt="">
-                <span class="icons">
-                    <i style="font-style: normal;">😄</i>
-                    <i style="font-style: normal;">👍</i>
-                    <i style="font-style: normal;">❤️</i>
-                    <p>You and 2k others</p>
-                </span>
+                    </div>
+                </div>
+                <div class="post-content-text">
+                    <pre>Hello friends 🖐️ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus minima, quod nulla incidunt illum itaque esse fugit! Aspernatur earum, eaque adipisci facilis mollitia eos exercitationem ex porro, consequatur quibusdam perspiciatis.</pre>
+                </div>
+                <div class="post-content">
+                    <img src="images/photo1.jpg" alt="">
+                </div>
+
+                <div class="liked">
+                    <div class="liked-icon"><i style="color: #3e60fa;" class="fas fa-thumbs-up"></i> <span>2k</span>
+                    </div>
+                    <a href="./comment.html">
+                        <div class="liked-icon"><i class="far fa-comment"></i> <span>655</span></div>
+                    </a>
+                </div>
             </div>
+            <div class="post post3">
+                <div class="profile">
+                    <div class="left-side">
+                        <div class="profile-pic">
+                            <a href="./profile.html"><img src="images/photo3.jpg" alt=""></a>
+                        </div>
+                        <span>
+                            <h3>Drixller .<span class="follow">Follow</span></h3>
+                            <p>2h <sup>.</sup> <i class="fas fa-globe-africa"></i></p>
+                        </span>
+                    </div>
+                    <div class="right-side">
+                        <i class="fas fa-ellipsis-h"></i>
 
-            <div class="liked">
-                <div class="liked-icon"><i style="color: #3e60fa;" class="fas fa-thumbs-up"></i> <span>2k</span></div>
-                <a href="./comment.html"><div class="liked-icon"><i class="far fa-comment"></i> <span>655</span></div></a>
+                    </div>
+                </div>
+                <div class="post-content-text">
+                    <pre>#beytubeArtz Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus minima, quod nulla incidunt illum itaque esse fugit! Aspernatur earum, eaque adipisci facilis mollitia eos exercitationem ex porro, consequatur quibusdam perspiciatis.</pre>
+                </div>
+                <div class="post-content">
+
+                    <img src="images/photo3.jpg" alt="">
+                </div>
+
+                <div class="liked">
+                    <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>112k</span></div>
+                    <a href="./comment.html">
+                        <div class="liked-icon"><i class="far fa-comment"></i> <span>15k</span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="post post4">
+                <div class="profile">
+                    <div class="left-side">
+                        <div class="profile-pic">
+                            <a href="./profile.html"><img src="images/photo4.jpg" alt=""></a>
+                        </div>
+                        <span>
+                            <h3>Winnie Artz .<span class="follow-up">Follow(up)</span></h3>
+                            <p>6h <sup>.</sup> <i class="fas fa-globe-africa"></i></p>
+                        </span>
+                    </div>
+                    <div class="right-side">
+                        <i class="fas fa-ellipsis-h"></i>
+
+                    </div>
+                </div>
+                <div class="post-content-text">
+                    <pre>Let's crush em 👊👊 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus minima, quod nulla incidunt illum itaque esse fugit! Aspernatur earum, eaque adipisci facilis mollitia eos exercitationem ex porro, consequatur quibusdam perspiciatis.</pre>
+                </div>
+                <div class="post-content">
+                    <img src="images/photo4.jpg" alt="">
+                </div>
+
+                <div class="liked">
+                    <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>15m</span></div>
+                    <a href="./comment.html">
+                        <div class="liked-icon"><i class="far fa-comment"></i> <span>232k</span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="post post5">
+                <div class="profile">
+                    <div class="left-side">
+                        <div class="profile-pic">
+                            <a href="./profile.html"><img src="images/photo5.jpg" alt=""></a>
+                        </div>
+                        <span>
+                            <h3>Agella .<span class="follow-up">Follow(up)</span></h3>
+                            <p>1m <sup>.</sup> <i class="fas fa-globe-africa"></i></p>
+                        </span>
+                    </div>
+                    <div class="right-side">
+                        <i class="fas fa-ellipsis-h"></i>
+
+                    </div>
+                </div>
+                <pre>Cool kid 💯<br>#lilangel</pre>
+                <div class="post-content">
+                    <img src="images/photo5.jpg" alt="">
+                </div>
+
+                <div class="liked">
+                    <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>895</span></div>
+                    <a href="./comment.html">
+                        <div class="liked-icon"><i class="far fa-comment"></i> <span>19k</span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="post post6">
+                <div class="profile">
+                    <div class="left-side">
+                        <div class="profile-pic">
+                            <a href="./profile.html"><img src="images/photo6.jpg" alt=""></a>
+                        </div>
+                        <span>
+                            <h3>Sparser M .<span class="follow-up">Follow(up)</span></h3>
+                            <p>16m <sup>.</sup> <i class="fas fa-globe-africa"></i></p>
+                        </span>
+                    </div>
+                    <div class="right-side">
+                        <i class="fas fa-ellipsis-h"></i>
+
+                    </div>
+                </div>
+                <div class="post-content-text">
+                    <pre>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus minima, quod nulla incidunt illum itaque esse fugit! Aspernatur earum, eaque adipisci facilis mollitia eos exercitationem ex porro, consequatur quibusdam perspiciatis.</pre>
+                </div>
+                <div class="post-content">
+                    <img src="images/photo6.jpg" alt="">
+
+                </div>
+
+                <div class="liked">
+                    <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>18k</span></div>
+                    <a href="./comment.html">
+                        <div class="liked-icon"><i class="far fa-comment"></i> <span>15k</span></div>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="post post3">
-            <div class="profile">
-                <div class="left-side">
-                    <div class="profile-pic">
-                        <a href="./edit-profile.html"><img src="images/profile3.png" alt=""></a>
+
+        <!-- rigth menu -->
+        <div class="menu-rigth">
+            <div class="title">
+                <h4>Friend requests</h4>
+                <span><a href="./friend.html">see all</a></span>
+            </div>
+            <div class="content-friend">
+                <a href="./profile.html"><img src="./images/feed3.png" alt=""></a>
+                <div class="details-friend-request">
+                    <div class="friend-name"><span>ssambadi</span><span>19h</span></div>
+                    <div class="validate-request">
+                        <button>confirm</button><button>delete</button>
                     </div>
-                    <span><h3>Drixller .<span class="follow">Follow</span></h3><p>2h <sup>.</sup> <i class="fas fa-globe-africa"></i></p></span>
                 </div>
-                <div class="right-side">
-                    <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <hr class="menu-rigth-hr">
+            <div class="friend-online">
+                <h4>Chat with Friend online</h4>
+                <div class="list-users">
+                    <div>
+                        <a href="./chat-page.html">
+                            <img src="./images/person1.jpg" alt="" /><i class="fas fa-circle"></i>
+                            <p>alice doe</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./chat-page.html">
+                            <img src="./images/person2.jpg" alt="" /><i class="fas fa-circle"></i>
+                            <p>michel doe</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./chat-page.html">
+                            <img src="./images/person3.jpg" alt="" /><i class="fas fa-circle"></i>
+                            <p>jack doe</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./chat-page.html">
+                            <img src="./images/person4.jpg" alt="" /><i class="fas fa-circle"></i>
+                            <p>christin doe</p>
+                        </a>
+                    </div>
                     
                 </div>
-            </div>
-
-            <div class="post-content">
-                <p>#beytubeArtz</p>
-                <img src="images/profile3.png" alt="">
-                <span class="icons">
-                    <i style="font-style: normal;">😄</i>
-                    <i style="font-style: normal;">👍</i>
-                    <i style="font-style: normal;">❤️</i>
-                    <p>Sparser and 112k others</p>
-                </span>
-            </div>
-
-            <div class="liked">
-                <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>112k</span></div>
-                <a href="./comment.html"><div class="liked-icon"><i class="far fa-comment"></i> <span>15k</span></div></a>
-            </div>
-        </div>
-        <div class="post post4">
-            <div class="profile">
-                <div class="left-side">
-                    <div class="profile-pic">
-                        <a href="./edit-profile.html"><img src="images/profile19.png" alt=""></a>
-                    </div>
-                    <span><h3>Winnie Artz .<span class="follow-up">Follow(up)</span></h3><p>6h <sup>.</sup> <i class="fas fa-globe-africa"></i></p></span>
-                </div>
-                <div class="right-side">
-                    <i class="fas fa-ellipsis-h"></i>
-                    
-                </div>
-            </div>
-
-            <div class="post-content">
-                <p>Let's crush em 👊👊</p>
-                <img src="images/profile19.png" alt="">
-                <span class="icons">
-                    <i style="font-style: normal;">😄</i>
-                    <i style="font-style: normal;">👍</i>
-                    <i style="font-style: normal;">❤️</i>
-                    <p>Jennifer Jones and 2m others</p>
-                </span>
-            </div>
-
-            <div class="liked">
-                <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>15m</span></div>
-                <a href="./comment.html"><div class="liked-icon"><i class="far fa-comment"></i> <span>232k</span></div></a>
-            </div>
-        </div>
-        <div class="post post5">
-            <div class="profile">
-                <div class="left-side">
-                    <div class="profile-pic">
-                        <a href="./edit-profile.html"><img src="images/profile20.png" alt=""></a>
-                    </div>
-                    <span><h3>Agella .<span class="follow-up">Follow(up)</span></h3><p>1m <sup>.</sup> <i class="fas fa-globe-africa"></i></p></span>
-                </div>
-                <div class="right-side">
-                    <i class="fas fa-ellipsis-h"></i>
-                    
-                </div>
-            </div>
-
-            <div class="post-content">
-                <p>Cool kid 💯<br>#lilangel</p>
-                <img src="images/profile20.png" alt="">
-                <span class="icons">
-                    <i style="font-style: normal;">😄</i>
-                    <i style="font-style: normal;">👍</i>
-                    <i style="font-style: normal;">❤️</i>
-                    <p>Mickiey J and 895 others</p>
-                </span>
-            </div>
-
-            <div class="liked">
-                <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>895</span></div>
-                <a href="./comment.html"><div class="liked-icon"><i class="far fa-comment"></i> <span>19k</span></div></a>
-            </div>
-        </div>
-        <div class="post post6">
-            <div class="profile">
-                <div class="left-side">
-                    <div class="profile-pic">
-                        <a href="./edit-profile.html"><img src="images/profile7.png" alt=""></a>
-                    </div>
-                    <span><h3>Sparser M .<span class="follow-up">Follow(up)</span></h3><p>16m <sup>.</sup> <i class="fas fa-globe-africa"></i></p></span>
-                </div>
-                <div class="right-side">
-                    <i class="fas fa-ellipsis-h"></i>
-                    
-                </div>
-            </div>
-
-            <div class="post-content">
-                <p>Bored</p>
-                <img src="images/profile7.png" alt="">
-                <span class="icons">
-                    <i style="font-style: normal;">😄</i>
-                    <i style="font-style: normal;">👍</i>
-                    <i style="font-style: normal;">❤️</i>
-                    <p>Clara and 18k others</p>
-                </span>
-            </div>
-
-            <div class="liked">
-                <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>18k</span></div>
-                <a href="./comment.html"><div class="liked-icon"><i class="far fa-comment"></i> <span>15k</span></div></a>
             </div>
         </div>
     </section>
 </body>
+
 </html>

@@ -5,6 +5,7 @@ p{
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 p span:first-of-type{
     font-size: 22px;
@@ -13,29 +14,78 @@ p span:first-of-type{
 p span:first-of-type a{
   margin-right: 10px;
 }
+.menu{
+    width:300px;
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+.menu a:first-of-type{
+     margin-left: 10px;
+     background: var(--second-blue);
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    width: 50%;    
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: var(--secondary-bg);
+}
+.menu a i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.total-friend{
+    /* width: 100%; */
+    margin: 10px 20px;
+}
 .content-list-friend{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
     height: fit-content;
-    margin-top: 20px;
+    padding: 30px;
+    margin: 0px 20px;
+    border-radius: 20px;
+    background: var(--secondary-bg);
 }
 .content-list-friend .bloc{
-  width: 100px;
-  height: 100px;
+ 
   margin-bottom: 50px;
-  border: 1px solid white;
+  display: flex;
   border-radius: 10px;
  
 }
 .content-list-friend .bloc img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
+    border: 1px solid white;
+}
+.conte-unfollow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:start;
 }
 .content-list-friend .bloc h4{
     margin-top: 10px;
     text-transform: capitalize;
     text-align: center;
+}
+.unfollow-btn{
+    background: var(--primary-bg);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.follow{
+    background: var(--second-blue);
+}
+.unfollow-btn i{
+     margin-right: 5px;
 }
