@@ -187,8 +187,9 @@
         height: 100vh;
         overflow: auto;
     }
-    .menu-left::-webkit-scrollbar ,
-    .menu-middle::-webkit-scrollbar ,
+
+    .menu-left::-webkit-scrollbar,
+    .menu-middle::-webkit-scrollbar,
     .menu-rigth::-webkit-scrollbar {
         width: 0px;
         height: 0px;
@@ -212,7 +213,7 @@
         align-items: center;
         padding: 5px;
     }
-  
+
 
     .menu-left .user-actual a img {
         width: 50px;
@@ -233,8 +234,8 @@
         margin-bottom: 10px;
     }
 
-    .menu-rigth .title h4 ,
-    .friend-online h4{
+    .menu-rigth .title h4,
+    .friend-online h4 {
         color: gray;
     }
 
@@ -244,17 +245,20 @@
         color: var(--second-blue);
         cursor: pointer;
     }
-    .menu-rigth .content-friend{
+
+    .menu-rigth .content-friend {
         width: 90%;
     }
-    .menu-rigth .menu-rigth-hr{
-       border-color: gray;
+
+    .menu-rigth .menu-rigth-hr {
+        border-color: gray;
     }
+
     .friend-online {
         margin: 10px 0px;
     }
 
-    .menu-rigth  .list-users{
+    .menu-rigth .list-users {
         width: 100%;
         height: fit-content;
         display: flex;
@@ -262,39 +266,44 @@
         overflow-x: scroll;
         padding-bottom: 15px;
         gap: 10px;
-     }
-     .menu-rigth  .list-users div:hover,
-     .menu-left .user-actual a:hover {
-        background: var(--secondary-bg); 
+    }
+
+    .menu-rigth .list-users div:hover,
+    .menu-left .user-actual a:hover {
+        background: var(--secondary-bg);
         border-radius: 10px;
     }
 
-     .menu-rigth  .list-users::-webkit-scrollbar {
+    .menu-rigth .list-users::-webkit-scrollbar {
         width: 1px;
         height: 1px;
         background: transparent;
     }
-     .menu-rigth  .list-users div a {
+
+    .menu-rigth .list-users div a {
         display: flex;
         align-items: center;
         height: 100%;
-     }
-     .menu-rigth  .list-users div a img{
+    }
+
+    .menu-rigth .list-users div a img {
         width: 50px;
-        height:50px;
+        height: 50px;
         margin: 5px;
         margin-bottom: 0px;
         border-radius: 100%;
-     }
-     .menu-rigth  .list-users div a i{
+    }
+
+    .menu-rigth .list-users div a i {
         position: relative;
         top: 10px;
         left: -15px;
         font-size: 12px;
         color: var(--green55);
-     }
-     .menu-rigth  .list-users div a p{
+    }
+
+    .menu-rigth .list-users div a p {
         text-transform: capitalize;
     }
-    
+
 }

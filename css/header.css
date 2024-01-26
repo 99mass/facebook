@@ -22,7 +22,8 @@
     font-size: 12px;
 }
 
-.basic-mode i, .data-mode i  {
+.basic-mode i,
+.data-mode i {
     margin-bottom: 2px;
     font-size: 18px;
 }
@@ -56,7 +57,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    
+
 }
 
 .top-content-icons i {
@@ -86,16 +87,25 @@
     font-size: 18px;
     color: gray;
 }
+
 .middle-content i:hover {
     color: #fff;
 }
 
 
-.middle-content .fa-home,.fa-user-friends,.fa-users, .fa-comment, .fa-bell {
+.middle-content .fa-home,
+.fa-user-friends,
+.fa-users,
+.fa-comment,
+.fa-bell {
     position: relative;
 }
 
-.middle-content .fa-home span,.fa-user-friends span,.fa-users span, .fa-comment span, .fa-bell span {
+.middle-content .fa-home span,
+.fa-user-friends span,
+.fa-users span,
+.fa-comment span,
+.fa-bell span {
     position: absolute;
     background-color: #e90000;
     font-size: 10px;
@@ -105,58 +115,65 @@
     right: -18px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 i {
     cursor: pointer;
 }
-.middle-content-0{
+
+.middle-content-0 {
     display: none;
 }
 
 
 @media screen and (min-width: 768px) {
-    .main-header .top-content{
+    .main-header .top-content {
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
     .main-header .top-content h3,
-    .main-header .top-content .top-content-icons{
+    .main-header .top-content .top-content-icons {
         width: 30%;
     }
-    .main-header .top-content .top-content-icons{
-       display: flex;
-       justify-content: flex-end;
+
+    .main-header .top-content .top-content-icons {
+        display: flex;
+        justify-content: flex-end;
     }
+
     .top-content-icons {
         gap: 0px;
-        
+
     }
-    
-    .middle-content-1{
+
+    .middle-content-1 {
         display: none;
     }
-    .middle-content-0{
+
+    .middle-content-0 {
         width: 40%;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
     }
-    .group-link{
+
+    .group-link {
         margin-left: 30px;
     }
-   
 
-.middle-content i {
-    margin-left: 50px;
-    font-size: 30px;
-   
-}
-.middle-content i:first-of-type {
-    margin-left: 0px;
-}   
+
+    .middle-content i {
+        margin-left: 50px;
+        font-size: 30px;
+
+    }
+
+    .middle-content i:first-of-type {
+        margin-left: 0px;
+    }
 }

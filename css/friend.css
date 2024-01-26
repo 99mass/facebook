@@ -1,56 +1,64 @@
- section{
-    padding: 10px 20px;
- }
- h1{
-    margin-bottom: 20px;
+ section {
+   padding: 10px 20px;
  }
 
-.content-friend{
-  width: 100%;
-  height: 80px;
-  margin: 10px 0px;
-  margin-bottom: 20px;
-  display: flex;
-}
-.content-friend a {
-  width: 25%;
-}
-.content-friend a img{
-    width: 100%;
-    height: 100%;
-  border-radius: 100%;
+ h1 {
+   margin-bottom: 20px;
+ }
 
-}
-.content-friend .details-friend-request{
+ .content-friend {
+   width: 100%;
+   height: 80px;
+   margin: 10px 0px;
+   margin-bottom: 20px;
+   display: flex;
+ }
+
+ .content-friend a {
+   width: 25%;
+ }
+
+ .content-friend a img {
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+
+ }
+
+ .content-friend .details-friend-request {
    width: 75%;
    height: 100%;
    padding-left: 20px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-}
-.details-friend-request .friend-name,
-.details-friend-request  .validate-request{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.details-friend-request  .validate-request button{
-    width: 45%;
-    height: 30px;
-    border-radius:5px;
-    border: none;
-    text-transform: capitalize;
-    cursor: pointer;
-}
-.details-friend-request  .validate-request button:first-of-type{
- background-color: var(--second-blue);
-}
-.details-friend-request  .validate-request button:last-of-type{
-    background: var(--secondary-bg);
-}
+ }
 
-/* @media screen and (min-width: 768px) {
+ .details-friend-request .friend-name,
+ .details-friend-request .validate-request {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .details-friend-request .validate-request button {
+   width: 45%;
+   height: 30px;
+   border-radius: 5px;
+   border: none;
+   text-transform: capitalize;
+   cursor: pointer;
+ }
+
+ .details-friend-request .validate-request button:first-of-type {
+   background-color: var(--second-blue);
+ }
+
+ .details-friend-request .validate-request button:last-of-type {
+   background: var(--secondary-bg);
+ }
+
+ /* @media screen and (min-width: 768px) {
   section{
     width: 100%;
  }
