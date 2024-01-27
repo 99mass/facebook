@@ -1,12 +1,19 @@
 .content-all-comments {
     width: 90%;
-    height: 200px;
+    height: fit-content;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
     margin: 10px;
     margin-left: 5%;
     margin-bottom: 10rem;
     border-top: 1px solid gray;
 }
 
+.plus-and-message{
+    display: flex;
+    align-items: ce;
+}
 .container-comments-message img {
     width: 40px;
     height: 40px;
@@ -17,11 +24,15 @@
 
 .container-comments-message {
     width: 100%;
-    height: 100px;
+    min-height: 0px ;
+    max-height: 200px;
+    overflow-y: scroll;
     padding: 20px;
     padding-left: 0px;
 }
-
+.container-comments-message::-webkit-scrollbar {
+    width:  2px;
+}
 .content-message {
     margin-bottom: 10px;
 }
@@ -34,7 +45,6 @@
 .content-message div pre {
     width: 80%;
     padding: 10px;
-    /* margin-bottom: 2px; */
     border-radius: 10px;
     text-wrap: wrap;
     word-wrap: break-word;
@@ -46,4 +56,125 @@
     margin-top: 5px;
     margin-left: 60px;
     font-size: small;
+}
+.content-message p  span{
+    text-transform: capitalize;
+    color: gray;
+    padding-right: 10px;
+}
+
+/* comment form */
+
+.messageBox {
+  width: 95%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 0 15px;
+  margin-top: 10px;
+  margin-left:  10px;
+  border-radius: 10px;
+  border: 1px solid rgb(63, 63, 63);
+}
+.plus-and-message{
+    width: 100%;
+}
+.messageBox:focus-within {
+  border: 1px solid rgb(110, 110, 110);
+}
+.fileUploadWrapper {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#file {
+  display: none;
+}
+.fileUploadWrapper label {
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.fileUploadWrapper label svg {
+  height: 18px;
+}
+.fileUploadWrapper label svg path {
+  transition: all 0.3s;
+}
+.fileUploadWrapper label svg circle {
+  transition: all 0.3s;
+}
+.fileUploadWrapper label:hover svg path {
+  stroke: #fff;
+}
+.fileUploadWrapper label:hover svg circle {
+  stroke: #fff;
+  fill: #3c3c3c;
+}
+.fileUploadWrapper label:hover .tooltip {
+  display: block;
+  opacity: 1;
+}
+.tooltip {
+  position: absolute;
+  top: -40px;
+  display: none;
+  opacity: 0;
+  color: white;
+  font-size: 10px;
+  text-wrap: nowrap;
+  background-color: #000;
+  padding: 6px 10px;
+  border: 1px solid #3c3c3c;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.596);
+  transition: all 0.3s;
+}
+#messageInput {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  color: white;
+}
+#messageInput:focus ~ .sendButton svg path,
+#messageInput:valid ~ .sendButton svg path {
+  fill: #3c3c3c;
+  stroke: white;
+}
+
+.sendButton {
+  width: fit-content;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.sendButton svg {
+  height: 18px;
+  transition: all 0.3s;
+}
+.sendButton svg path {
+  transition: all 0.3s;
+}
+.sendButton:hover svg path {
+  fill: #3c3c3c;
+  stroke: white;
 }

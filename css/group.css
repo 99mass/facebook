@@ -1,0 +1,420 @@
+body {
+    overflow: hidden;
+}
+
+section {
+    padding: 0px 20px;
+    display: flex;
+}
+
+.menu-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-left * {
+    text-transform: capitalize;
+}
+
+.menu-left h4 {
+    width: 95%;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+
+.menu-left h4:hover {
+    border-radius: 10px;
+    background: var(--secondary-bg);
+}
+
+.menu-left h4 i {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 22px;
+    border-radius: 100%;
+    background: var(--secondary-bg);
+}
+
+.menu-left h4 .fa-mobile-screen {
+    background: var(--second-blue);
+}
+
+.btn-new-group {
+    width: 90%;
+    padding: 8px 0px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--hsl-color-1);
+    background: var(--fds-blue-80);
+    cursor: pointer;
+}
+
+.btn-new-group i {
+    margin-right: 10px;
+    color: var(--hsl-color-1);
+}
+
+hr {
+    width: 90%;
+    border-color: gray;
+}
+
+.list-group-managed {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: scroll;
+    height: 250px;
+}
+
+
+.list-group-managed .group a {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.list-group-managed .group a img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.list-group-managed .group a span {
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.group:hover {
+    border-radius: 10px;
+    background: var(--secondary-bg);
+}
+
+
+
+.menu-middle {
+    border: none;
+    width: 70%;
+    padding: 0px 15%;
+}
+
+.discover,
+.your-groups {
+    padding: 0px 5%;
+}
+
+.menu-middle {
+   100vh;
+    overflow-y: scroll height: ;
+}
+
+
+.conten-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.conten-post {
+    height: fit-content;
+    padding-bottom: 0px;
+    margin-bottom: 0rem;
+    border-radius: 10px;
+    background: var(--secondary-bg);
+}
+
+.post {
+    margin-bottom: 0px;
+    border-top: none;
+}
+
+.menu-middle .content-all-comments {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.list-post-sugession {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+    margin-bottom: 10rem;
+
+}
+
+.post-sugess {
+    width: 250px;
+    height: 300px;
+    background: var(--secondary-bg);
+    border-radius: 10px;
+}
+
+.post-sugess a img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.post-sugess div {
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.post-sugess div .name-group-membres {
+    padding: 0px;
+    margin: 0px;
+}
+
+.post-sugess div .name-group-membres a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.post-sugess div .name-group-membres span:last-of-type {
+    font-size: 12;
+    font-weight: normal;
+    color: gray;
+}
+
+.post-sugess div button {
+    padding: 8px 0px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    background: var(--primary-bg);
+    border: none;
+    cursor: pointer;
+}
+
+.content-list-your-groups {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 20px;
+    margin-bottom: 10rem;
+
+}
+
+.element-group {
+    width: 48%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--secondary-bg);
+}
+
+.element-group .top-element a {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.element-group .top-element img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+
+}
+
+.element-group .top-element span {
+    text-transform: capitalize;
+}
+
+.element-group .view {
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-weight: 900;
+    color: var(--hsl-color-1);
+    background: var(--fds-blue-80);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    .menu-middle {
+        border: none;
+        width: 70%;
+        padding: 0px 5%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    section {
+        padding: 0px 20px;
+        flex-direction: column;
+    }
+
+    .menu-middle {
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+        padding: 0px 0px;
+        margin-top: 20px;
+    }
+
+    .menu-left {
+        width: 100%;
+        padding-left: 0px;
+        height: fit-content;
+    }
+
+    .menu-left .bloc-nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        order: 3;
+    }
+
+    .menu-left .bloc-nav h4 {
+        width: fit-content;
+        font-size: small;
+    }
+
+    .menu-left h4 i {
+        margin-right: 10px;
+        padding: 4px 5px;
+        font-size: small;
+    }
+
+    .menu-left .btn-new-group {
+        order: 1;
+        width: fit-content;
+        padding: 8px;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    hr,
+    .menu-left .h4-list-group-managed,
+    .menu-left .list-group-managed {
+        order: 2;
+    }
+
+    .list-group-managed {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding-bottom: 10px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        height: fit-content;
+    }
+
+    .menu-left .list-group-managed::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
+    .menu-left .bloc-nav h4 {
+        background: var(--secondary-bg);
+        padding-right: 10px;
+        border-radius: 10px;
+    }
+
+    .menu-left h4 {
+        padding: auto 10px;
+    }
+
+
+    .list-post-sugession {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        padding-top: 20px;
+        margin-bottom: 10rem;
+    
+    }
+
+    .post-sugess {
+        width: 40%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background: transparent;
+    }
+    .post-sugess a img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px ;
+    }
+    .post-sugess div {
+        width: 100%;
+        height: fit-content;
+        padding: 0px;
+    
+    }
+    .post-sugess div .name-group-membres a {
+        justify-content: start;
+        height: fit-content;
+        gap: 5px;
+    }
+
+
+    .post-sugess div button {
+        display: none;
+    }
+
+
+
+    .menu-left .bloc-nav h4 span {
+        margin-right: 2px;
+    }
+
+    .your-groups {
+        padding: 0px;
+
+    }
+}
+@media screen and (max-width: 450px) {
+    .post-sugess {
+        width: 80%;
+    }
+    .element-group {
+        width: 90%;
+    }
+}

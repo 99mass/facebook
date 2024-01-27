@@ -12,6 +12,27 @@
     --second-blue:#3155f1;
     --teal60: #00D4A1;
     --green55: #00ED4F;
+    --fds-blue-05: #ECF3FF;
+    --fds-blue-30: #AAC9FF;
+    --fds-blue-40: #77A7FF;
+    --fds-blue-60: #1877F2;
+    --fds-blue-70: #2851A3;
+    --fds-blue-80: #1D3C78;
+     --fds-blue-40: #77A7FF;
+     --hsl-color-1:hsl(214, 80%, 46%);
+     --fds-black-alpha-05: rgba(0, 0, 0, 0.05);
+     --fds-black-alpha-10: rgba(0, 0, 0, 0.1);
+     --fds-black-alpha-15: rgba(0, 0, 0, 0.15);
+     --fds-black-alpha-20: rgba(0, 0, 0, 0.2);
+     --fds-black-alpha-30: rgba(0, 0, 0, 0.3);
+     --fds-black-alpha-40: rgba(0, 0, 0, 0.4);
+     --fds-black-alpha-50: rgba(0, 0, 0, 0.5);
+     --fds-black-alpha-60: rgba(0, 0, 0, 0.6);
+     --fds-black-alpha-80: rgba(0, 0, 0, 0.8);
+     --fds-black: black;
+     --nav-bar-background-gradient-wash: linear-gradient(to top, #4283c5, rgba(24,25,26,.5), rgba(124, 142, 160, 0.5), rgba(24,25,26,.2), rgba(121, 146, 170, 1));
+     --nav-bar-background-gradient: linear-gradient(to top, #242526, rgba(36,37,38,.9), rgba(36,37,38,.7), rgba(36,37,38,.4), rgba(36,37,38,0));
+
 }
 
 body {
