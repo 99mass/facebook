@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
+    
     <link rel="stylesheet" href="css/friend.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="font-awesome/css/all.css">
-    <title>Facebook </title>
+    <title>social-network </title>
 </head>
 
 <body>
@@ -18,14 +22,12 @@
         <div class="fixed">
             <div class="main-header">
                 <div class="top-content">
-                    <h3>facebook</h3>
+                    <h3>social-network</h3>
                     <div class="middle-content middle-content-0">
-                        <i class="active fas fa-home" title="Home"><span><a href="./index.html">25+</a></span></i>
-                        <i class="fas fa-user-friends" title="Friend Requests"><span><a href="./friend.html">
-                                    4+</a></span></i>
-                        <i class="fas fa-comment" title="Chat"><span><a href="./chat.html"> 42</a></span></i>
-                        <i class="fas fa-bell" title="Notification"><span><a href="./notification.html">
-                                    22+</a></span></i>
+                        <a href="./index.html"><i class="active fas fa-home" title="Home"><span>25+</span></i></a>
+                        <a href="./friend.html"><i class="fas fa-user-friends" title="Friend Requests"><span>4+</span></i></a>
+                        <a href="./chat.html"><i class="fas fa-comment" title="Chat"><span> 42</span></i></a>
+                        <a href="./notification.html"><i class="fas fa-bell" title="Notification"><span>22+</span></i></a>
                         <a href="./group.html" class="group-link" title="Groups"> <i class="fas fa-users"></i></a>
                     </div>
                     <div class="top-content-icons">
@@ -34,23 +36,43 @@
                 </div>
                 <!-- a utliser sur les ecrans de moin de 768px  -->
                 <div class="middle-content middle-content-1">
-                    <i class="active fas fa-home"><span><a href="./index.html">25+</a></span></i>
-                    <i class="fas fa-user-friends"><span><a href="./friend.html"> 4+</a></span></i>
-                    <i class="fas fa-comment"><span><a href="./chat.html"> 42</a></span></i>
-                    <i class="fas fa-bell"><span><a href="./notification.html"> 22+</a></span></i>
+                    <a href="./index.html"><i class="active fas fa-home"><span>25+</span></i></a>
+                    <a href="./friend.html"><i class="fas fa-user-friends"><span>4+</span></i></a>
+                    <a href="./chat.html"><i class="fas fa-comment"><span>42</span></i></a>
+                    <a href="./notification.html"><i class="fas fa-bell"><span>22+</span></i></a>
                     <a href="./group.html"> <i class="fas fa-users"></i></a>
                 </div>
             </div>
         </div>
     </nav>
-    <section>
+
+<section class="section-friend">
+    <div class="menu-left">
+        <div class="user-actual">
+            <a href="./profile.html">
+                <img src="./images/feed7.png" alt="">
+                <span>samba diop</span>
+            </a>
+        </div>
+        <a href="./friend.html" class="menu-left-a"> <i class="fas fa-user-friends"></i>Friends</a>
+        <a href="./friend.html" class="menu-left-a"> <i class="fas fa-users"></i>Groups</a>
+        <hr>
+        <h4>create</h4>
+        <div class="new-post-content">
+           <a href="./create-post.html"> <i class="fa-solid fa-pen-to-square"></i> post</a>
+           <a href=""><i class="fas fa-users"></i>Group</a>
+
+        </div>
+    </div>
+
+    <div class="middle-bloc">
         <h1>Friends</h1>
         <h4>Friend requests</h4>
 
         <div class="content-friend">
             <a href="./profile.html"><img src="./images/profile19.png" alt=""></a>
             <div class="details-friend-request">
-                <div class="friend-name"><span>ssambadi</span><span>1w</span></div>
+                <div class="friend-name"><span>person name</span><span>1 week</span></div>
                 <div class="validate-request">
                     <button>confirm</button><button>delete</button>
                 </div>
@@ -59,7 +81,7 @@
         <div class="content-friend">
             <a href="./profile.html"><img src="./images/profile2.png" alt=""></a>
             <div class="details-friend-request">
-                <div class="friend-name"><span>ssambadi</span><span>2w</span></div>
+                <div class="friend-name"><span>person name</span><span>2 week</span></div>
                 <div class="validate-request">
                     <button>confirm</button><button>delete</button>
                 </div>
@@ -68,7 +90,7 @@
         <div class="content-friend">
             <a href="./profile.html"><img src="./images/profile12.png" alt=""></a>
             <div class="details-friend-request">
-                <div class="friend-name"><span>ssambadi</span><span>8w</span></div>
+                <div class="friend-name"><span>person name</span><span>8 week</span></div>
                 <div class="validate-request">
                     <button>confirm</button><button>delete</button>
                 </div>
@@ -77,7 +99,7 @@
         <div class="content-friend">
             <a href="./profile.html"><img src="./images/profile16.png" alt=""></a>
             <div class="details-friend-request">
-                <div class="friend-name"><span>ssambadi</span><span>1m</span></div>
+                <div class="friend-name"><span>person name</span><span>1 month</span></div>
                 <div class="validate-request">
                     <button>confirm</button><button>delete</button>
                 </div>
@@ -86,7 +108,7 @@
         <div class="content-friend">
             <a href="./profile.html"><img src="./images/profile11.png" alt=""></a>
             <div class="details-friend-request">
-                <div class="friend-name"><span>ssambadi</span><span>3m</span></div>
+                <div class="friend-name"><span>person name</span><span>3 month</span></div>
                 <div class="validate-request">
                     <button>confirm</button><button>delete</button>
                 </div>
@@ -95,7 +117,7 @@
         <div class="content-friend">
             <a href="./profile.html"><img src="./images/profile9.png" alt=""></a>
             <div class="details-friend-request">
-                <div class="friend-name"><span>ssambadi</span><span>1y</span></div>
+                <div class="friend-name"><span>person name</span><span>1 year</span></div>
                 <div class="validate-request">
                     <button>confirm</button><button>delete</button>
                 </div>
@@ -104,7 +126,7 @@
         <div class="content-friend">
             <a href="./profile.html"><img src="./images/profile15.png" alt=""></a>
             <div class="details-friend-request">
-                <div class="friend-name"><span>ssambadi</span><span>2y</span></div>
+                <div class="friend-name"><span>person name</span><span>2 year</span></div>
                 <div class="validate-request">
                     <button>confirm</button><button>delete</button>
                 </div>
@@ -113,13 +135,13 @@
         <div class="content-friend">
             <a href="./profile.html"><img src="./images/profile8.png" alt=""></a>
             <div class="details-friend-request">
-                <div class="friend-name"><span>ssambadi</span><span>3y</span></div>
+                <div class="friend-name"><span>person name</span><span>3 year</span></div>
                 <div class="validate-request">
                     <button>confirm</button><button>delete</button>
                 </div>
             </div>
         </div>
-
+    </div>
     </section>
 
 

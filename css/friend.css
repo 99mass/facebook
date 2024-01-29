@@ -1,4 +1,5 @@
  section {
+  display: flex;
    padding: 10px 20px;
  }
 
@@ -43,8 +44,9 @@
 
  .details-friend-request .validate-request button {
    width: 45%;
-   height: 30px;
+   height: 40px;
    border-radius: 5px;
+   font-size: 16px;
    border: none;
    text-transform: capitalize;
    cursor: pointer;
@@ -59,13 +61,122 @@
  }
 
  /* @media screen and (min-width: 768px) {
-  section{
+  .section-friend{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
   .content-friend{
-    width: 500px;
+    width: 400px;
   }
   .content-friend a {
-    width: 250px;
+    width: 100px;
   }
+
 } */
+
+@media screen and (min-width: 768px) {
+  body{
+    overflow: hidden;
+  }
+  .section-friend{
+    width: 100%;
+    display: flex;
+ }
+ .middle-bloc{
+  width: 50%;
+  height: 100vh;
+  padding-bottom: 10rem;
+  overflow: scroll;
+}
+.content-friend a {
+  width: 80px;
+  height: 80px;
+}
+  .menu-left{
+    display: block;
+    width: 30%;
+    padding-left: 30px;
+  }
+
+  .menu-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .menu-left .user-actual a {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .menu-left .user-actual a img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 100%;
+  }
+
+  .menu-left .user-actual a span {
+    padding-left: 15px;
+    text-transform: capitalize;
+  }
+  .menu-left a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+  }
+  .menu-left a i {
+    font-size: 35px;
+    padding: 8px;
+    color: var(--fds-blue-80);
+    border-radius: 100%;
+  }
+  .menu-left a:hover {
+    width: 80%;
+   
+    background: var(--secondary-bg);
+    border-radius: 10px;
+  }
+
+  .menu-left hr {
+    width: 80%;
+    border-color: gray;
+  }
+  .menu-left h4 {
+    color: gray;
+    text-transform: capitalize;
+  }
+  .menu-left .new-post-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-left .new-post-content a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    padding-left: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .menu-left .new-post-content a i {
+    padding: 8px;
+    font-size: 22px;
+    border-radius: 100%;
+    color: #fff;
+    background: var(--primary-bg);
+  }
+  .details-friend-request .validate-request{
+    width: fit-content;
+    gap: 20px;
+  }
+
+ .details-friend-request .validate-request button{
+    width: fit-content;
+    padding: 10px 30px;
+  }
+}

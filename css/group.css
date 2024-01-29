@@ -42,8 +42,8 @@ section {
 }
 
 .btn-new-group {
-    width: 90%;
-    padding: 8px 0px;
+    width: 80%;
+    padding: 12px 0px;
     border-radius: 10px;
     text-align: center;
     text-transform: capitalize;
@@ -68,7 +68,7 @@ hr {
     flex-direction: column;
     gap: 5px;
     overflow-y: scroll;
-    height: 250px;
+    height: 100vh;
 }
 
 
@@ -111,8 +111,9 @@ hr {
 }
 
 .menu-middle {
-   100vh;
-    overflow-y: scroll height: ;
+    height: 100vh;
+    overflow-y: scroll  ;
+    padding-bottom: 10rem;
 }
 
 

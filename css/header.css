@@ -51,6 +51,11 @@
     width: 100%;
     font-size: 19px;
 }
+.top-content  h3{
+    width: fit-content;
+    text-transform: capitalize;
+    font-size: 32px;
+}
 
 .top-content-icons {
     display: flex;
@@ -89,7 +94,7 @@
 }
 
 .middle-content i:hover {
-    color: #fff;
+    color: var(--second-blue);
 }
 
 
@@ -128,6 +133,7 @@ i {
 }
 
 
+
 @media screen and (min-width: 768px) {
     .main-header .top-content {
         width: 100%;
@@ -147,7 +153,6 @@ i {
 
     .top-content-icons {
         gap: 0px;
-
     }
 
     .middle-content-1 {
@@ -175,5 +180,13 @@ i {
 
     .middle-content i:first-of-type {
         margin-left: 0px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:900px) {
+    .top-content h3{
+        width: fit-content;
+    }
+    .middle-content-0 {
+      width: 100%;
     }
 }

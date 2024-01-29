@@ -1,309 +1,379 @@
 .menu-left,
 .menu-rigth {
-    display: none;
+  display: none;
 }
 
 .post {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: var(--secondary-bg);
-    margin-top: 3px;
-    border-top: solid .01rem #515151;
-    margin-bottom: 3px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: var(--secondary-bg);
+  margin-top: 3px;
+  border-top: solid 0.01rem #515151;
+  margin-bottom: 3px;
 }
 
 .post .profile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .post .profile .left-side,
 .profile .right-side {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
 }
 
 .post .profile .left-side span p {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .profile-pic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border: solid 2px;
-    padding-top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: solid 2px;
+  padding-top: 10px;
 }
 
 .post .profile .left-side img {
-    width: 100%;
+  width: 100%;
 }
 
 .follow,
 .follow-up {
-    padding-left: 5px;
-    cursor: pointer;
+  padding-left: 5px;
+  cursor: pointer;
 }
 
 .follow {
-    color: #3155f1;
+  color: #3155f1;
 }
 
 .follow-up {
-    color: #BCC0C4;
+  color: #bcc0c4;
 }
 
 .post-content-text {
-    width: 100%;
-    margin-top: 8px;
+  width: 100%;
+  margin-top: 8px;
 }
 
 .post-content-text pre {
-    width: 100%;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: pre-wrap;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 .post-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    gap: 2px;
-    margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 2px;
+  margin-bottom: 10px;
 }
 
 .post-content p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .post-content span {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 5px;
 }
 
 .post-content span p {
-    margin-left: 54px;
+  margin-left: 54px;
 }
 
 .post-content span i {
-    position: absolute;
-    background-color: #3155f1;
-    border-radius: 50%;
-    font-size: 13px;
-    border: solid 2px var(--primary-bg);
+  position: absolute;
+  background-color: #3155f1;
+  border-radius: 50%;
+  font-size: 13px;
+  border: solid 2px var(--primary-bg);
 }
 
 .post-content span i:nth-child(1) {
-    z-index: 3;
+  z-index: 3;
 }
 
 .post-content span i:nth-child(2) {
-    margin-left: 15px;
-    z-index: 2;
+  margin-left: 15px;
+  z-index: 2;
 }
 
 .post-content span i:nth-child(3) {
-    margin-left: 25px;
-    z-index: 1;
+  margin-left: 25px;
+  z-index: 1;
 }
 
 .post-content img {
-    width: 90%;
-    height: 40 0px;
-    align-self: center;
+  width: 90%;
+  height: 40 0px;
+  align-self: center;
 }
 
 .liked {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .liked .liked-icon {
-    background-color: var(--primary-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    width: 120px;
-    height: 35px;
-    border-radius: 20px;
-    cursor: pointer;
+  background-color: var(--primary-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .liked-icon .fa-comment {
-    transform-origin: center;
-    transform: rotateY(180deg);
+  transform-origin: center;
+  transform: rotateY(180deg);
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        overflow: hidden;
+  body {
+    overflow: hidden;
+  }
+
+  section {
+    display: flex;
+    width: 100%;
+  }
+
+  .menu-middle {
+    width: 40%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 10rem;
+    border-top: 2px solid gray;
+    border-radius: 10px;
+  }
+
+  .menu-left,
+  .menu-rigth {
+    display: block;
+    width: 30%;
+    padding-left: 30px;
+  }
+
+  .menu-left,
+  .menu-middle,
+  .menu-rigth {
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .menu-left::-webkit-scrollbar,
+  .menu-middle::-webkit-scrollbar,
+  .menu-rigth::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+  }
+
+  .post-content {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .post-content img {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+  }
+  .menu-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .menu-left .user-actual a {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .menu-left .user-actual a img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 100%;
+  }
+
+  .menu-left .user-actual a span {
+    padding-left: 15px;
+    text-transform: capitalize;
+  }
+  .menu-left a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+  }
+  .menu-left a i {
+    font-size: 35px;
+    padding: 8px;
+    color: var(--fds-blue-80);
+    border-radius: 100%;
+  }
+  .menu-left a:hover {
+    width: 80%;
+   
+    background: var(--secondary-bg);
+    border-radius: 10px;
+  }
+
+  .menu-left hr {
+    width: 80%;
+    border-color: gray;
+  }
+  .menu-left h4 {
+    color: gray;
+    text-transform: capitalize;
+  }
+  .new-post-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .new-post-content a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    padding-left: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .new-post-content a i {
+    padding: 8px;
+    font-size: 22px;
+    border-radius: 100%;
+    color: #fff;
+    background: var(--primary-bg);
+  }
+  .menu-rigth {
+    padding-left: 10px;
+  }
+  .menu-rigth .title {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .menu-rigth .title h4,
+  .friend-online h4 {
+    color: gray;
+  }
+
+  .menu-rigth .title span a {
+    font-size: small;
+    text-transform: capitalize;
+    color: var(--second-blue);
+    cursor: pointer;
+  }
+
+  .menu-rigth .content-friend {
+    width: 90%;
+  }
+
+  .menu-rigth .menu-rigth-hr {
+    width: 90%;
+    border-color: gray;
+  }
+
+  .friend-online {
+    margin: 20px 0px;
+  }
+
+  .menu-rigth .list-users {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    gap: 15px;
+  }
+
+  .menu-rigth .list-users div:hover,
+  .menu-left .user-actual a:hover {
+    background: var(--secondary-bg);
+    border-radius: 10px;
+  }
+
+  .menu-rigth .list-users::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+  }
+
+  .menu-rigth .list-users div a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menu-rigth .list-users div a img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-bottom: 0px;
+    border-radius: 100%;
+  }
+
+  .menu-rigth .list-users div a i {
+    position: relative;
+    top: 10px;
+    left: -15px;
+    font-size: 12px;
+    color: var(--green55);
+  }
+
+  .menu-rigth .list-users div a p {
+    text-transform: capitalize;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){    
+    .menu-rigth{
+        display: none;
     }
-
-    section {
-        display: flex;
-        width: 100%;
+    .menu-left{
+        width: 35%;
     }
-
-    .menu-middle {
-        width: 40%;
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 10rem;
-        border-top: 1px solid gray;
-        border-radius: 10px;
+    .menu-middle{
+        width: 60%;
     }
-
-    .menu-left,
-    .menu-rigth {
-        display: block;
-        width: 30%;
-        padding-left: 30px;
+    .menu-left hr {
+        width: 80%;
     }
-
-    .menu-left,
-    .menu-middle,
-    .menu-rigth {
-        height: 100vh;
-        overflow: auto;
-    }
-
-    .menu-left::-webkit-scrollbar,
-    .menu-middle::-webkit-scrollbar,
-    .menu-rigth::-webkit-scrollbar {
-        width: 0px;
-        height: 0px;
-        background: transparent;
-    }
-
-    .post-content {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .post-content img {
-        width: 100%;
-        height: 100%;
-        align-self: center;
-    }
-
-    .menu-left .user-actual a {
-        width: 90%;
-        display: flex;
-        align-items: center;
-        padding: 5px;
-    }
-
-
-    .menu-left .user-actual a img {
-        width: 50px;
-        height: 50px;
-        border: 1px solid gray;
-        border-radius: 100%;
-    }
-
-    .menu-left .user-actual a span {
-        padding-left: 15px;
-        text-transform: capitalize;
-    }
-
-    .menu-rigth .title {
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-
-    .menu-rigth .title h4,
-    .friend-online h4 {
-        color: gray;
-    }
-
-    .menu-rigth .title span a {
-        font-size: small;
-        text-transform: capitalize;
-        color: var(--second-blue);
-        cursor: pointer;
-    }
-
-    .menu-rigth .content-friend {
-        width: 90%;
-    }
-
-    .menu-rigth .menu-rigth-hr {
-        border-color: gray;
-    }
-
-    .friend-online {
-        margin: 10px 0px;
-    }
-
-    .menu-rigth .list-users {
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        overflow-x: scroll;
-        padding-bottom: 15px;
-        gap: 10px;
-    }
-
-    .menu-rigth .list-users div:hover,
-    .menu-left .user-actual a:hover {
-        background: var(--secondary-bg);
-        border-radius: 10px;
-    }
-
-    .menu-rigth .list-users::-webkit-scrollbar {
-        width: 1px;
-        height: 1px;
-        background: transparent;
-    }
-
-    .menu-rigth .list-users div a {
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    .menu-rigth .list-users div a img {
-        width: 50px;
-        height: 50px;
-        margin: 5px;
-        margin-bottom: 0px;
-        border-radius: 100%;
-    }
-
-    .menu-rigth .list-users div a i {
-        position: relative;
-        top: 10px;
-        left: -15px;
-        font-size: 12px;
-        color: var(--green55);
-    }
-
-    .menu-rigth .list-users div a p {
-        text-transform: capitalize;
-    }
-
 }
