@@ -1,66 +1,65 @@
- section {
+section {
   display: flex;
-   padding: 10px 20px;
- }
+  padding: 10px 20px;
+}
 
- h1 {
-   margin-bottom: 20px;
- }
+h1 {
+  margin-bottom: 20px;
+}
 
- .content-friend {
-   width: 100%;
-   height: 80px;
-   margin: 10px 0px;
-   margin-bottom: 20px;
-   display: flex;
- }
+.content-friend {
+  width: 100%;
+  height: 80px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  display: flex;
+}
 
- .content-friend a {
-   width: 25%;
- }
+.content-friend a {
+  width: 25%;
+}
 
- .content-friend a img {
-   width: 100%;
-   height: 100%;
-   border-radius: 100%;
+.content-friend a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
 
- }
+.content-friend .details-friend-request {
+  width: 75%;
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
- .content-friend .details-friend-request {
-   width: 75%;
-   height: 100%;
-   padding-left: 20px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
- }
+.details-friend-request .friend-name,
+.details-friend-request .validate-request {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
- .details-friend-request .friend-name,
- .details-friend-request .validate-request {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
- }
+.details-friend-request .validate-request button {
+  width: 45%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
 
- .details-friend-request .validate-request button {
-   width: 45%;
-   height: 40px;
-   border-radius: 5px;
-   font-size: 16px;
-   border: none;
-   text-transform: capitalize;
-   cursor: pointer;
- }
+.details-friend-request .validate-request button:first-of-type {
+  background-color: var(--second-blue);
+}
 
- .details-friend-request .validate-request button:first-of-type {
-   background-color: var(--second-blue);
- }
+.details-friend-request .validate-request button:last-of-type {
+  background: var(--secondary-bg);
+}
 
- .details-friend-request .validate-request button:last-of-type {
-   background: var(--secondary-bg);
- }
-
- /* @media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .section-friend{
     width: 100%;
     display: flex;
@@ -77,24 +76,29 @@
 } */
 
 @media screen and (min-width: 768px) {
-  body{
+  body {
     overflow: hidden;
   }
-  .section-friend{
+  .section-friend {
     width: 100%;
     display: flex;
- }
- .middle-bloc{
-  width: 50%;
-  height: 100vh;
-  padding-bottom: 10rem;
-  overflow: scroll;
-}
-.content-friend a {
-  width: 80px;
-  height: 80px;
-}
-  .menu-left{
+  }
+  .middle-bloc {
+    width: 50%;
+    height: 100vh;
+    padding-bottom: 10rem;
+    overflow: scroll;
+  }
+  .middle-bloc::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+  }
+  .content-friend a {
+    width: 80px;
+    height: 80px;
+  }
+  .menu-left {
     display: block;
     width: 30%;
     padding-left: 30px;
@@ -137,7 +141,7 @@
   }
   .menu-left a:hover {
     width: 80%;
-   
+
     background: var(--secondary-bg);
     border-radius: 10px;
   }
@@ -150,7 +154,7 @@
     color: gray;
     text-transform: capitalize;
   }
-  .menu-left .new-post-content{
+  .menu-left .new-post-content {
     display: flex;
     flex-direction: column;
   }
@@ -170,13 +174,37 @@
     color: #fff;
     background: var(--primary-bg);
   }
-  .details-friend-request .validate-request{
+  .details-friend-request .validate-request {
     width: fit-content;
     gap: 20px;
   }
 
- .details-friend-request .validate-request button{
+  .details-friend-request .validate-request button {
     width: fit-content;
     padding: 10px 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-left{
+    display: block;
+    width: 50%;
+    padding-left: 30px;
+  }
+  .middle-bloc {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 767px){
+  .menu-left {
+    display: none;
+  }
+  .middle-bloc {
+    width: 100%;
+  }
+  .content-friend a {
+    width: 80px;
+    height: 80px;
   }
 }

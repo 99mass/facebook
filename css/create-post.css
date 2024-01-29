@@ -1,0 +1,33 @@
+.content-form-post{
+    width: 800px;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background: var(--primary-bg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.post-header h1{
+    font-weight: initial;
+    text-transform: capitalize;
+    text-align: center;
+}
+.content-form-post hr{
+    margin: 10px 0px;
+    border-color: gray;
+}
+.bloc-privacy-post h2{
+   font-weight: initial;
+}
+
+.bloc-privacy-post div{
+    display: flex; 
+    gap: 10px;
+}
+.bloc-privacy-post div p{
+    display: flex; 
+   
+}

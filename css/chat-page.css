@@ -118,3 +118,148 @@ form .fa-paper-plane{
 form button{
     margin-left:  20px ;
 }
+
+@media screen and (min-width: 768px) {
+   body {
+     overflow: hidden;
+   }
+   .section-chat {
+     width: 100%;
+     display: flex;
+   }
+   .middle-bloc {
+     width: 30%;
+     height: 70vh;
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 10rem;
+     overflow: scroll;
+   }
+   .middle-bloc .fa-arrow-left{
+      display: none;
+   }
+
+   .content-from-chat{
+    width: 30%;
+   height: 80px;
+   position: fixed;
+   bottom: 10vh;
+   background: var(--secondary-bg);
+   border-top: none;
+}
+form textarea{ 
+   width: 70%;
+   height: 60px;
+}
+   .middle-bloc::-webkit-scrollbar {
+     width: 0px;
+     height: 0px;
+     background: transparent;
+   }
+
+   .menu-left {
+     display: block;
+     width: 30%;
+     padding-left: 30px;
+   }
+ 
+   .menu-left {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+   }
+   .menu-left .user-actual a {
+     width: 80%;
+     display: flex;
+     align-items: center;
+     padding: 5px;
+   }
+ 
+   .menu-left .user-actual a img {
+     width: 50px;
+     height: 50px;
+     border: 1px solid gray;
+     border-radius: 100%;
+   }
+ 
+   .menu-left .user-actual a span {
+     padding-left: 15px;
+     text-transform: capitalize;
+   }
+   .menu-left a {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     font-size: 18px;
+   }
+   .menu-left a i {
+     font-size: 35px;
+     padding: 8px;
+     color: var(--fds-blue-80);
+     border-radius: 100%;
+   }
+   .menu-left a:hover {
+     width: 80%;
+ 
+     background: var(--secondary-bg);
+     border-radius: 10px;
+   }
+ 
+   .menu-left hr {
+     width: 80%;
+     border-color: gray;
+   }
+   .menu-left h4 {
+     color: gray;
+     text-transform: capitalize;
+   }
+   .menu-left .new-post-content {
+     display: flex;
+     flex-direction: column;
+   }
+   .menu-left .new-post-content a {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     padding: 10px 0px;
+     padding-left: 10px;
+     font-size: 18px;
+     text-transform: capitalize;
+   }
+   .menu-left .new-post-content a i {
+     padding: 8px;
+     font-size: 22px;
+     border-radius: 100%;
+     color: #fff;
+     background: var(--primary-bg);
+   }
+
+ }
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   .menu-left{
+     display: block;
+     width: 50%;
+     padding-left: 30px;
+   }
+   .middle-bloc {
+     width: 60%;
+     height: 80vh;
+   }
+   .content-from-chat{
+      width: 60%;
+      padding-right: 50px;
+      bottom: 0px;
+   }
+ }
+ 
+ @media screen and (max-width: 767px){
+   .menu-left {
+     display: none;
+   }
+   .middle-bloc {
+     width: 100%;
+   }
+ }
+ 
