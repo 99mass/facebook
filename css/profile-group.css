@@ -223,3 +223,148 @@ section {
         height: 150px;
     }
 }
+
+
+
+/* chat group */
+.container-chat-group{
+     width: 400px;
+     height: fit-content;
+     position: fixed;
+     bottom: 10px;
+     right: 30px;
+     border-radius: 10px;
+     border: 1px dashed gray;
+     background: var(--secondary-bg);
+}
+.chat-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+.chat-header i{
+    font-size: 22px;
+    color: gray;
+}
+.container-chat-group hr{
+ border-color: gray;
+}
+.container-chat-group .chat-body{
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    padding-bottom: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.container-chat-group .chat-body .content-mess{
+ width: 100%;
+ height: fit-content; 
+ display: flex;
+ align-items:  normal;
+ gap: 10px;
+ margin-bottom: 20px;
+}
+
+.container-chat-group .chat-body .content-mess img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.container-chat-group .chat-body .content-mess div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 85%;
+}
+.container-chat-group .chat-body .content-mess div pre{
+    padding: 10px 5px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    background: var(--primary-bg);
+}
+.container-chat-group .chat-body .content-mess div p{
+    font-size: small;
+}
+.container-chat-group .chat-body .content-mess div p span{
+    margin-right: 10px;
+    color: gray;
+}
+.container-chat-group .chat-footer {
+    width: 390px;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2d2d;
+    margin: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(63, 63, 63);
+  }
+  .chat-footer:focus-within {
+    border: 1px solid rgb(110, 110, 110);
+  }
+  .emoji{
+    font-size: 22px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  #messageInput-2 {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    border: none;
+    padding-top: 5px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: white;
+    
+  }
+  #messageInput-2:focus ~ #sendButton-2 svg path,
+  #messageInput-2:valid ~ #sendButton-2 svg path {
+    fill: #3c3c3c;
+    stroke: white;
+  }
+  
+  #sendButton-2 {
+    width: fit-content;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  #sendButton-2 svg {
+    height: 20px;
+    transition: all 0.3s;
+  }
+  #sendButton-2 svg path {
+    transition: all 0.3s;
+  }
+  #sendButton-2:hover svg path {
+    fill: #3c3c3c;
+    stroke: white;
+  }
+  
+
+  @media screen and (max-width: 450px) {
+    .container-chat-group{
+        width: 95%;
+        right: 10px;
+   }
+   .container-chat-group .chat-footer {
+    width: 96%;
+
+   }
+}
