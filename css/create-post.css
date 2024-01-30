@@ -1,33 +1,204 @@
-.content-form-post{
-    width: 800px;
-    height: 60vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 20px;
-    background: var(--primary-bg);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+body{
+  overflow: hidden;
+}
+.content-form-post {
+  width: 600px;
+  height: fit-content;
+  max-height: 70vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: var(--primary-bg);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.post-header h1{
-    font-weight: initial;
-    text-transform: capitalize;
-    text-align: center;
+.post-header h1 {
+  font-weight: initial;
+  text-transform: capitalize;
+  text-align: center;
 }
-.content-form-post hr{
-    margin: 10px 0px;
-    border-color: gray;
+.content-form-post hr {
+  margin: 10px 0px;
+  border-color: gray;
 }
-.bloc-privacy-post h2{
-   font-weight: initial;
+.bloc-privacy-post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bloc-privacy-post p {
+  font-weight: initial;
+  margin-bottom: 10px;
 }
 
-.bloc-privacy-post div{
-    display: flex; 
-    gap: 10px;
+.bloc-privacy-post div {
+  display: flex;
+  justify-content: space-between;
 }
-.bloc-privacy-post div p{
-    display: flex; 
-   
+.bloc-privacy-post div div {
+  display: flex;
+}
+.bloc-privacy-post div div i {
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 100%;
+  background: var(--secondary-bg);
+}
+.part-1 {
+  display: flex;
+  flex-direction: column;
+}
+.bloc-privacy-post div input[type="radio"] {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  margin: 6px;
+  padding: 0;
+  border: 2px solid var(--radio-border-color);
+  border-radius: 50%;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.bloc-privacy-post div input[type="radio"]:not(:disabled):checked {
+  border-color: var(--radio-checked-color);
+  background-color: var(--radio-checked-color);
+  background-clip: content-box;
+  padding: 2px;
+  background-image: radial-gradient(
+    circle,
+    var(--radio-checked-color) 0%,
+    var(--radio-checked-color) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+.bloc-privacy-post div input[type="radio"]:disabled {
+  background-color: var(--radio-disabled-bg-color);
+}
+.bloc-privacy-post div input[type="radio"]:disabled:checked {
+  background-image: radial-gradient(
+    circle,
+    var(--radio-border-color) 0%,
+    var(--radio-border-color) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+}
+
+.list-friend {
+  width: 92%;
+  height: fit-content;
+  margin-left: 8%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: var(--secondary-bg);
+ 
+}
+.list-friend h3{
+ display: flex;
+ justify-content: space-between;
+}
+.list-friend h3 span:last-of-type,
+.list-friend h3 span i{
+  font-weight: initial;
+  color: gray;
+  margin-right: 5px;
+}
+.user-bloc {
+  display: flex;
+  display: none;
+}
+.user-bloc div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user-bloc div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.user-bloc div span{
+  color: gray;
+}
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  margin: 6px;
+  padding: 0;
+  border: 2px solid var(--radio-border-color);
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:not(:disabled):checked {
+  border-color: var(--radio-checked-color);
+  background-color: var(--radio-checked-color);
+  background-clip: content-box;
+  padding: 2px;
+}
+.bloc-privacy-post .list-friend{
+  display: none;
+}
+
+.post-content textarea{
+  width: 98%;
+  height: 150px;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  border-left: 5px solid gray;
+  resize: none;
+  outline: none;
+}
+.content-assets {
+  text-align: right;
+}
+.content-assets i,
+.content-assets span {
+  font-size: 30px;
+  cursor: pointer;
+}
+.content-assets i {
+  margin-right: 10px;
+  color: var(--teal60);
+
+}
+
+.btn-post{
+   width: 100%;
+   margin: 20px 0px;
+   padding: 10px 0px;
+   font-size: 18px;
+   border: none;
+   border-radius: 5px;
+   color: gray;
+   background: var(--secondary-bg);
+   cursor: pointer;
+}
+
+
+@media screen and (max-width:767px) {
+  .content-form-post {
+    width: 90%;
+
+  }
 }

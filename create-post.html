@@ -71,41 +71,99 @@
       </div>
     </nav>
     <section>
-        <div class="content-form-post">
-            <div class="post-header">
-                <h1>create post</h1>
-            </div>
-            <hr>
-            <form action="">
-                <div class="bloc-privacy-post">
-                    <h2>Specify the privacy of the post : </h2>
-                    <div>                         
-                         <p>                            
-                            <p><i class="fas fa-users"></i>Public</p>
-                            <p>Anyone on or Social-network</p>
-                           
-                        </p>
-                        <input type="radio">
-                    </div>
-                    <div> 
-                        
-                        <p>
-                            <p><i class="fa-solid fa-user-group"></i>Private</p>
-                            <p>Your friends on Social-network</p>
-                        </p>
-                        <input type="radio">
-                    </div>
-                    <div>                        
-                        <p>
-                            <p><i class="fa-solid fa-user"></i>Specific friends</p>
-                            <p>Only show to some friends</p>
-                        </p>
-                        <input type="radio">
-                    </div>
-
-                </div>
-            </form>
+      <div class="content-form-post">
+        <div class="post-header">
+          <h1>create post</h1>
         </div>
+        <hr />
+        <form action="">
+          <div class="bloc-privacy-post">
+            <p>Who can see your post?<br><br>
+              Your post will show up in Feed, on your profile.<br><br>
+              Your post will be send  to your Specific friends, but you can change the audience of this specific post.
+            </p>
+            <div>
+              <div>
+                <i class="fa-solid fa-earth-europe"></i>
+                <div class="part-1">
+                  <h3>Public</h3>
+                  <div>Anyone on or off Social-network</div>
+                </div>
+              </div>
+              <input name="privacy" type="radio" />
+            </div>
+
+            <div>
+              <div>
+                <i class="fa-solid fa-user-group"></i>
+                <div class="part-1">
+                  <h3>Private</h3>
+                  <div>Your friends on Social-network</div>
+                </div>
+              </div>
+              <input name="privacy" type="radio" />
+            </div>
+
+            <div>
+              <div>
+                <i class="fa-solid fa-user"></i>
+                <div class="part-1">
+                  <h3>Specific friends</h3>
+                  <div>Only show to some friends</div>
+                </div>
+              </div>
+              <input name="" type="radio" />
+            </div>
+            <div class="list-friend">
+              <h3> <span>select friends</span> <span><i class="fa-solid fa-eye-slash"></i>hide</span></h3>
+              <div class="user-bloc">
+                <div>
+                  <img src="./images/feed7.png" alt="" />
+                  <span>userName</span>
+                </div>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="user-bloc">
+                <div>
+                  <img src="./images/feed3.png" alt="" />
+                  <span>userName</span>
+                </div>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="user-bloc">
+                <div>
+                  <img src="./images/feed1.png" alt="" />
+                  <span>userName</span>
+                </div>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="user-bloc">
+                <div>
+                  <img src="./images/feed4.png" alt="" />
+                  <span>userName</span>
+                </div>
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="user-bloc">
+                <div>
+                  <img src="./images/feed5.png" alt="" />
+                  <span>userName</span>
+                </div>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="post-content">
+             <textarea name="" placeholder="What's on your mind, Breukh?" id="" ></textarea>
+             <div class="content-assets"><i class="fa-regular fa-file-image" title="Choose image"></i><span class="emoji" title="Choose emoji">😄</span></div>
+          </div>
+          <button class="btn-post">Post</button>
+
+        </form>
+      </div>
     </section>
   </body>
 </html>

@@ -32,7 +32,10 @@
      --fds-black: black;
      --nav-bar-background-gradient-wash: linear-gradient(to top, #4283c5, rgba(24,25,26,.5), rgba(124, 142, 160, 0.5), rgba(24,25,26,.2), rgba(121, 146, 170, 1));
      --nav-bar-background-gradient: linear-gradient(to top, #242526, rgba(36,37,38,.9), rgba(36,37,38,.7), rgba(36,37,38,.4), rgba(36,37,38,0));
-
+     --radio-border-color: #8b8c89;
+     --radio-checked-color: #274c77;
+     --radio-hover-color: #a3cef1;
+     --radio-disabled-bg-color: #d9d9d9;
 }
 
 body {

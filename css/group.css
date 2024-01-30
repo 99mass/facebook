@@ -41,9 +41,11 @@ section {
     background: var(--second-blue);
 }
 
-.btn-new-group {
+ .btn-new-group {
     width: 80%;
-    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
+    padding: 6px 0px;
     border-radius: 10px;
     text-align: center;
     text-transform: capitalize;
@@ -52,8 +54,8 @@ section {
     cursor: pointer;
 }
 
-.btn-new-group i {
-    margin-right: 10px;
+.menu-left .btn-new-group i {
+    font-size: 22px;
     color: var(--hsl-color-1);
 }
 
