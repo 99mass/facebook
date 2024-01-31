@@ -96,20 +96,23 @@
     }
 
     .menu{
-        width: 98%;
+        width: 100%;
         display: flex;
         gap: 8px;
+        padding: 0px 20%;
         margin-top: 20px;
-        margin-left: 10%;
-        
     }
     .menu a{
         width: fit-content;
     }
     .body-menu{
         width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .post{
-        
+        width: 40%;
     }
 }
