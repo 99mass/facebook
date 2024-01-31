@@ -69,6 +69,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding-bottom: 10rem;
     overflow-y: scroll;
     height: 100vh;
 }

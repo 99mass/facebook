@@ -1,3 +1,6 @@
+*{
+    font-weight: initial;
+}
 body {
     overflow-y: scroll;
 }
@@ -104,6 +107,7 @@ section {
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -223,7 +227,67 @@ section {
         height: 150px;
     }
 }
+.content-post-about .bloc-left .conten-posts {
+  /* display: none; */
+}
 
+
+/* display event */
+.conten-events{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 10em;
+}
+.event-details{
+     width: 100%;
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-bottom: 20px;
+     padding-top: 10px;
+     border-radius: 10px;
+     background: var(--primary-bg);
+}
+.event-details h2{
+    padding: 10px ;
+}
+.event-details p,
+.event-details pre{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+.event-details p i{
+    margin-right: 10px;
+    font-size: 22px;
+    color: gray;
+}
+.event-details p span{
+    margin-right: 10px;
+    color: gray;
+}
+.event-details button{
+  width: fit-content;
+  padding: 8px;
+  margin: 10px;
+  font-size: 17px;
+  background: var(--second-blue);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.event-details button i{
+  margin-right: 5px;
+}
+.event-details .btn-not-going{
+   background: var(--secondary-bg);
+}
+.conten-events{
+    display: none;
+}
 
 
 /* chat group */
@@ -368,3 +432,255 @@ section {
 
    }
 }
+
+.container-chat-group{
+    display: none;
+}
+
+
+/* form create post */
+.content-form-post {
+    width: 500px;
+    height: fit-content;
+    max-height: 70vh;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: var(--primary-bg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .post-header h1 {
+    font-weight: initial;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .content-form-post hr {
+    margin: 10px 0px;
+    border-color: gray;
+  }
+  
+  .post-content textarea{
+    width: 98%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: initial;
+    background: transparent;
+    border: none;
+    color: gray;
+    border-left: 5px solid gray;
+    resize: none;
+    outline: none;
+  }
+  .content-assets {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .content-assets i,
+  .content-assets span {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .content-assets i {
+    margin-right: 10px;
+    color: var(--teal60);
+  }
+  
+  .btn-post{
+     width: 100%;
+     margin: 20px 0px;
+     padding: 10px 0px;
+     font-size: 18px;
+     border: none;
+     border-radius: 5px;
+     color: gray;
+     background: var(--secondary-bg);
+     cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width:767px) {
+    .content-form-post {
+      width: 90%;
+  
+    }
+  }
+  .content-form-post{
+    display: none;
+  }
+
+  /* form create event */
+.content-form-event {
+    width: 500px;
+    height: fit-content;
+    max-height: 70vh;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: var(--primary-bg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .event-header h1 {
+    font-weight: initial;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .content-form-event hr {
+    margin: 10px 0px;
+    border-color: gray;
+  }
+  .event-content .title-event ,
+  .event-content textarea{
+    width: 98%;
+    height: 80px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: initial;
+    background: transparent;
+    border: none;
+    color: gray;
+    border-left: 5px solid gray;
+    resize: none;
+    outline: none;
+  }
+  .event-content .title-event {
+    width: 98%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    border-left: 5px solid gray;
+  }
+  .event-content .content-date-time{
+   display: flex;
+   justify-content: space-between;
+  }
+  .event-content .content-date-time div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;      
+    }
+    .event-content .content-date-time div input{
+        width: 100%;
+        height: 100%;
+        padding: 8px 4px;
+        font-size: 18px;
+        background: transparent;
+        border: 1px solid gray;
+        outline: none;
+        cursor: pointer;
+  }
+
+  
+  .content-form-event  .btn-event{
+     width: 100%;
+     margin: 0px 0px;
+     margin-top: 25px;
+     padding: 10px 0px;
+     font-size: 18px;
+     border: none;
+     border-radius: 5px;
+     color: gray;
+     background: var(--secondary-bg);
+     cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width:767px) {
+    .content-form-event {
+      width: 90%;
+  
+    }
+  }
+  .content-form-event {
+display: none;
+  }
+
+  /* list people saying going */
+
+  .content-list-people-going {
+    width: 500px;
+    height: fit-content;
+    max-height: 70vh;
+    overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--primary-bg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .list-header h1 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: initial;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .content-list-people-going hr {
+    margin: 10px 0px;
+    border-color: gray;
+  }
+
+
+  
+  .list-friend {
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+  }
+  .list-friend .user-bloc {
+    display: flex;
+  }
+  .list-friend .user-bloc div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .list-friend .user-bloc div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  .list-friend .user-bloc div span{
+    color: gray;
+  }
+
+  
+
+  
+  @media screen and (max-width:767px) {
+    .content-list-people-going {
+      width: 90%;
+  
+    }
+  }
+  .content-list-people-going {
+    display: none;
+  }
