@@ -10,24 +10,39 @@
     height: 100%;
     filter: grayscale(80%);
 }
-.photo-covert img:last-of-type{
+.photo-covert div {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: -140px;
+    left: 20px;
+}
+.photo-covert div img:last-of-type{
     width: 150px;
     height: 150px;
-    position: relative;
-    top: -75px;
-    left: 20px;
     border-radius: 100%;
     border: 1px solid white;
 }
+.photo-covert div p{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.photo-covert div p span{
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.photo-covert div p a{
+    font-size: 18px;
+    text-transform: lowercase;
+    color: gray;
+    cursor: pointer;
+}
 .body-1{
     position: relative;
-    top: 100px;
+    top: 10px;
 }
-.body-1 .user{
-    margin-left: 30px;
-    font-size: 20px;
-    text-transform: capitalize;
-} 
+
 .menu{
     width: 98%;
     display: flex;
@@ -56,4 +71,45 @@
     width: 100%;
     height: 400px;
     margin-top: 30px;
+}
+
+@media screen and (min-width:768px) {
+    body{
+        overflow-y: scroll;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+    }
+    .photo-covert{
+        width: 100%;
+        height: fit-content;
+        padding: 0px 20%;
+        border-bottom: 0px;
+        background: var(--nav-bar-background-gradient-wash);
+    }
+    .photo-covert img:first-of-type{
+        height: 400px;
+        margin-top: 0px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .menu{
+        width: 98%;
+        display: flex;
+        gap: 8px;
+        margin-top: 20px;
+        margin-left: 10%;
+        
+    }
+    .menu a{
+        width: fit-content;
+    }
+    .body-menu{
+        width: 100%;
+    }
+    .post{
+        
+    }
 }
