@@ -1,199 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/header.css" />
 
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="font-awesome/css/all.css">
-    <title>social-network </title>
-</head>
-<body> 
-        <!-- nav section -->
-        <nav class="top">
-            <div class="fixed">
-                <div class="main-header">
-                    <div class="top-content">
-                        <h3>social-network</h3>
-                        <div class="middle-content middle-content-0">
-                            <a href="./index.html"><i class="active fas fa-home" title="Home"><span>25+</span></i></a>
-                            <a href="./friend.html"><i class="fas fa-user-friends" title="Friend Requests"><span>4+</span></i></a>
-                            <a href="./chat.html"><i class="fas fa-comment" title="Chat"><span> 42</span></i></a>
-                            <a href="./notification.html"><i class="fas fa-bell" title="Notification"><span>22+</span></i></a>
-                            <a href="./group.html" class="group-link" title="Groups"> <i class="fas fa-users"></i></a>
-                        </div>
-                        <div class="top-content-icons">
-                            <i class="fas fa-bars"></i>
-                        </div>
-                    </div>
-                    <!-- a utliser sur les ecrans de moin de 768px  -->
-                    <div class="middle-content middle-content-1">
-                        <a href="./index.html"><i class="active fas fa-home"><span>25+</span></i></a>
-                        <a href="./friend.html"><i class="fas fa-user-friends"><span>4+</span></i></a>
-                        <a href="./chat.html"><i class="fas fa-comment"><span>42</span></i></a>
-                        <a href="./notification.html"><i class="fas fa-bell"><span>22+</span></i></a>
-                        <a href="./group.html"> <i class="fas fa-users"></i></a>
-                    </div>
-                </div>
+    <link rel="stylesheet" href="font-awesome/css/all.css" />
+    <title>social-network</title>
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav class="top">
+      <div class="fixed">
+        <div class="main-header">
+          <div class="top-content">
+            <h3>social-network</h3>
+            <div class="middle-content middle-content-0">
+              <a href="./index.html"
+                ><i class="active fas fa-home" title="Home"
+                  ><span>25+</span></i
+                ></a
+              >
+              <a href="./friend.html"
+                ><i class="fas fa-user-friends" title="Friend Requests"
+                  ><span>4+</span></i
+                ></a
+              >
+              <a href="./chat.html"
+                ><i class="fas fa-comment" title="Chat"><span> 42</span></i></a
+              >
+              <a href="./notification.html"
+                ><i class="fas fa-bell" title="Notification"
+                  ><span>22+</span></i
+                ></a
+              >
+              <a href="./group.html" class="group-link" title="Groups">
+                <i class="fas fa-users"></i
+              ></a>
             </div>
-        </nav>
+            <div class="top-content-icons">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+          <!-- a utliser sur les ecrans de moin de 768px  -->
+          <div class="middle-content middle-content-1">
+            <a href="./index.html"
+              ><i class="active fas fa-home"><span>25+</span></i></a
+            >
+            <a href="./friend.html"
+              ><i class="fas fa-user-friends"><span>4+</span></i></a
+            >
+            <a href="./chat.html"
+              ><i class="fas fa-comment"><span>42</span></i></a
+            >
+            <a href="./notification.html"
+              ><i class="fas fa-bell"><span>22+</span></i></a
+            >
+            <a href="./group.html"> <i class="fas fa-users"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <section>
-        <div class="photo-covert">
-            <img src="./images/feed3.png" alt="">
-            <!-- <img src="./images/feed3.png" alt=""> -->
-            <div>
-                <img src="./images/feed3.png" alt="">
-                <p> 
-                    <span>breukh man</span>
-                    <a href="view-friend.html">259 friends</a>
+      <div class="photo-covert">
+        <img src="./images/feed3.png" alt="" />
+        <div>
+          <img src="./images/feed3.png" alt="" />
+          <p>
+            <span>breukh man</span>
+            <a href="view-friend.html">259 friends</a>
+          </p>
+        </div>
+      </div>
+      <!-- nav menu -->
+      <div class="menu">
+        <a href="./profile.html"
+          ><i class="fa-solid fa-signs-post"></i>Post</a
+        >
+        <a href="./edit-profile.html"
+          ><i class="fa-solid fa-pen"></i>Edit profile</a
+        >
+        <a href="./view-friend.html"
+          ><i class="fa-solid fa-user-group"></i>Friends</a
+        >
+      </div>
+      <!-- list post -->
+      <div class="body-1">
+        <!-- <div class="user">breukh man</div> -->
+        
+        <div class="body-menu">
+          <div class="post post1">
+            <div class="profile">
+              <div class="left-side">
+                <div class="profile-pic">
+                  <img src="images/photo1.jpg" alt="" />
+                </div>
+                <span
+                  ><h3>Lions M .</h3>
+                  <p>16m <sup>.</sup> <i class="fas fa-globe-africa"></i></p
+                ></span>
+              </div>
+            </div>
+
+            <div class="post-content">
+              <p>The Lions 💯</p>
+              <img src="images/photo1.jpg" alt="" />
+            </div>
+
+            <div class="liked">
+              <div class="liked-icon">
+                <i class="far fa-thumbs-up"></i> <span>15k</span>
+              </div>
+              <a href="./comment.html">
+                <div class="liked-icon">
+                  <i class="far fa-comment"></i> <span>6k</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="post post1">
+            <div class="profile">
+              <div class="left-side">
+                <div class="profile-pic">
+                  <img src="images/photo2.jpg" alt="" />
+                </div>
+                <span
+                  ><h3>Lions M .</h3>
+                  <p>16m <sup>.</sup> <i class="fas fa-globe-africa"></i></p
+                ></span>
+              </div>
+            </div>
+
+            <div class="post-content">
+              <p>The Lions 💯</p>
+              <img src="images/photo2.jpg" alt="" />
+            </div>
+
+            <div class="liked">
+              <div class="liked-icon">
+                <i class="far fa-thumbs-up"></i> <span>15k</span>
+              </div>
+              <a href="./comment.html">
+                <div class="liked-icon">
+                  <i class="far fa-comment"></i> <span>6k</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- edit profile bloc -->
+      <div class="edit-profile-bloc">
+        <h1>
+          <span>Edit profile</span><i class="fa-regular fa-circle-xmark" title="Close form"></i>
+        </h1>
+        <hr />
+        <form action="#" method="post">
+          <div class="picture-actual">
+            <h3>actual picture</h3>
+            <img src="./images/feed5.png" alt="" />
+            <label for="file" class="custum-file-upload">
+              <div class="icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H7C7.55228 23 8 22.5523 8 22C8 21.4477 7.55228 21 7 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM14 15.5C14 14.1193 15.1193 13 16.5 13C17.8807 13 19 14.1193 19 15.5V16V17H20C21.1046 17 22 17.8954 22 19C22 20.1046 21.1046 21 20 21H13C11.8954 21 11 20.1046 11 19C11 17.8954 11.8954 17 13 17H14V16V15.5ZM16.5 11C14.142 11 12.2076 12.8136 12.0156 15.122C10.2825 15.5606 9 17.1305 9 19C9 21.2091 10.7909 23 13 23H20C22.2091 23 24 21.2091 24 19C24 17.1305 22.7175 15.5606 20.9844 15.122C20.7924 12.8136 18.858 11 16.5 11Z"
+                      fill=""
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <span>Click to upload image</span>
+              </div>
+              <input id="file" type="file" />
+            </label>
+          </div>
+          <hr />
+          <div class="profile-type">
+            <h3>Profile type</h3>
+            <div class="conten-radio">
+              <div>
+                <i class="fa-solid fa-earth-americas"></i>
+                <span>Public</span>
+                <input
+                  class="input input-alt-checked"
+                  type="radio"
+                  name="privacy"
+                  checked
+                />
+              </div>
+              <div>
+                <i class="fa-solid fa-lock"></i>
+                <span>Private</span>
+                <input
+                  class="input input-alt-checked"
+                  name="privacy"
+                  type="radio"
+                />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="basic-infos">
+            <div class="form-control">
+              <h3>Basic infos</h3>
+              <div class="group">
+                <p class="form-group">
+                  <span
+                    ><span class="identiti">First Name : </span
+                    ><span>breukh</span></span
+                  >
+                  <span class="edit" title="Click to edit First Name">edit</span>
                 </p>
+                <!-- <input
+                  class="input input-alt"
+                  placeholder="First Name here... "
+                  type="text"
+                /> -->
+                <span class="input-border input-border-alt"></span>
+              </div>
+              <div class="group">
+                <p class="form-group">
+                  <span
+                    ><span class="identiti">Last Name : </span
+                    ><span>breukh</span></span
+                  >
+                  <span class="edit" title="Click to edit Last Name">edit</span>
+                </p>
+                <!-- <input class="input input-alt" placeholder="Last Name here... "  type="text"> -->
+                <span class="input-border input-border-alt"></span>
+              </div>
+              <div class="group">
+                <p class="form-group">
+                  <span
+                    ><span class="identiti">Nickname : </span
+                    ><span>breukh</span></span
+                  >
+                  <span class="edit" title="Click to edit Nickname">edit</span>
+                </p>
+                <!-- <input class="input input-alt" placeholder="Nickname here... "  type="text"> -->
+                <span class="input-border input-border-alt"></span>
+              </div>
+              <div class="group">
+                <p class="form-group">
+                  <span
+                    ><span class="identiti">Date of Birth : </span
+                    ><span>15-02-2024</span></span
+                  >
+                  <span class="edit" title="Click to edit Date of Birth">edit</span>
+                </p>
+                <!-- <input class="input input-alt" placeholder="Date of Birth ex: dd/mm/yyyy here... "  type="text"> -->
+                <span class="input-border input-border-alt"></span>
+              </div>
+              <div class="group">
+                <p class="form-group">
+                  <span
+                    ><span class="identiti">Email : </span
+                    ><span>breukh@gmail.com</span></span
+                  >
+                  <span class="edit" title="Click to edit Email">edit</span>
+                </p>
+                <!-- <input class="input input-alt" placeholder="Email here... "  type="text"> -->
+                <span class="input-border input-border-alt"></span>
+              </div>
+              <div class="group">
+                <p class="form-group">
+                  <span
+                    ><span class="identiti">About Me : </span
+                    ><span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iste quasi tempore ipsa laudantium perspiciatis placeat
+                      veritatis sapiente beatae quae minus. Eius dolore tempore
+                      dicta soluta officiis eum adipisci rem quas.
+                    </span></span
+                  >
+                  <span class="edit" title="Click to edit About Me">edit</span>
+                </p>
+                <!-- <textarea
+                  class="input input-alt input-alt-textarea"
+                  placeholder="About Me here... "
+                ></textarea> -->
+                <span class="input-border input-border-alt"></span>
+              </div>
             </div>
+            <div class="submit-update">
+              <button type="submit">update profile</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- friend bloc -->
+      <div class="friend-fololowing-me">
+        <div class="menus">
+            <span><i class="fa-solid fa-user-group"></i>Follower</span>
+            <span><i class="fa-solid fa-user-group"></i>Following</span>
         </div>
-        <div class="body-1">
-            <!-- <div class="user">breukh man</div> -->
-            <div class="menu">
-                <a href="./profile.html"><i class="fa-solid fa-signs-post"></i>Post</a>
-                <a href="./edit-profile.html"><i class="fa-solid fa-pen"></i>Edit profile</a>
-                <a href="./view-friend.html"><i class="fa-solid fa-user-group"></i>Friends</a>
-            </div>
-            <div class="body-menu">
-                <div class="post post1">
-                    <div class="profile">
-                        <div class="left-side">
-                            <div class="profile-pic">
-                                <img src="images/photo1.jpg" alt="">
-                            </div>
-                            <span><h3>Lions M .</h3><p>16m <sup>.</sup> <i class="fas fa-globe-africa"></i></p></span>
-                            
-                        </div>                       
-                    </div>
-        
-                    <div class="post-content">
-                        <p>The Lions 💯</p>
-                        <img src="images/photo1.jpg" alt="">                        
-                    </div>
-        
-                    <div class="liked">
-                        <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>15k</span></div>
-                        <a href="./comment.html">
-                        <div class="liked-icon"><i class="far fa-comment"></i> <span>6k</span></div>
-                    </a>
-                    </div>
+        <div class="content-list-friend">
+            <div class="bloc">
+               <a href="./profile.html"> <img src="./images/feed5.png" alt=""></a>
+                <div class="conte-unfollow">
+                    <h4>Mickiey</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                    <!-- <span class="unfollow-btn follow"><i class="fa-solid fa-square-check"></i>follow</span> -->
+                
                 </div>
-                <div class="post post1">
-                    <div class="profile">
-                        <div class="left-side">
-                            <div class="profile-pic">
-                                <img src="images/photo2.jpg" alt="">
-                            </div>
-                            <span><h3>Lions M .</h3><p>16m <sup>.</sup> <i class="fas fa-globe-africa"></i></p></span>
-                            
-                        </div>                       
-                    </div>
-        
-                    <div class="post-content">
-                        <p>The Lions 💯</p>
-                        <img src="images/photo2.jpg" alt="">                        
-                    </div>
-        
-                    <div class="liked">
-                        <div class="liked-icon"><i class="far fa-thumbs-up"></i> <span>15k</span></div>
-                        <a href="./comment.html">
-                        <div class="liked-icon"><i class="far fa-comment"></i> <span>6k</span></div>
-                    </a>
-                    </div>
+               
+            </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed3.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>breukh</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
                 </div>
             </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed1.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>jack</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed7.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>robber</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed2.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>jackson</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed4.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>franck</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+
+       
+
         </div>
-        <div class="edit-profile-bloc">
-            <h1> <span>Edit profile</span><i class="fa-regular fa-circle-xmark"></i></h1>
-            <hr>
-            <form action="#" method="post">
-                <div class="picture-actual">
-                    <h3>actual picture</h3>
-                    <img src="./images/feed5.png" alt="">
-                    <label for="file" class="custum-file-upload">
-                        <div class="icon">
-                        <svg viewBox="0 0 24 24" fill="" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H7C7.55228 23 8 22.5523 8 22C8 21.4477 7.55228 21 7 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM14 15.5C14 14.1193 15.1193 13 16.5 13C17.8807 13 19 14.1193 19 15.5V16V17H20C21.1046 17 22 17.8954 22 19C22 20.1046 21.1046 21 20 21H13C11.8954 21 11 20.1046 11 19C11 17.8954 11.8954 17 13 17H14V16V15.5ZM16.5 11C14.142 11 12.2076 12.8136 12.0156 15.122C10.2825 15.5606 9 17.1305 9 19C9 21.2091 10.7909 23 13 23H20C22.2091 23 24 21.2091 24 19C24 17.1305 22.7175 15.5606 20.9844 15.122C20.7924 12.8136 18.858 11 16.5 11Z" fill=""></path> </g></svg>
-                        </div>
-                        <div class="text">
-                           <span>Click to upload image</span>
-                           </div>
-                           <input id="file" type="file">
-                        </label>                    
+    </div>
+    <div class="friend-i-fololow">
+        <div class="menus">
+            <span><i class="fa-solid fa-user-group"></i>Follower</span>
+            <span><i class="fa-solid fa-user-group"></i>Following</span>
+        </div>
+        <div class="content-list-friend">
+            <div class="bloc">
+               <a href="./profile.html"> <img src="./images/feed5.png" alt=""></a>
+                <div class="conte-unfollow">
+                    <h4>Mickiey</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                    <!-- <span class="unfollow-btn follow"><i class="fa-solid fa-square-check"></i>follow</span> -->
+                
                 </div>
-                <hr>
-                <div class="profile-type">
-                    <h3>Profile type</h3> 
-                    <div class="conten-checkbox">
-                        <div>
-                            <i class="fa-solid fa-earth-americas"></i>
-                            <span>Public</span>
-                            <input class="input input-alt-checked" type="checkbox">
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-earth-americas"></i>
-                            <input class="input input-alt-checked" type="checkbox">
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="basic-infos">
-                    <div class="form-control">
-                        <h3>Basic infos</h3>
-                        <div class="group">
-                            <p class="form-group"><span><span class="identiti">First Name : </span><span>breukh</span></span> <span class="edit">edit</span></p>
-                            <input class="input input-alt" placeholder="First Name here... "  type="text">
-                            <span class="input-border input-border-alt"></span>
-                        </div>
-                        <div class="group">
-                            <p class="form-group"><span><span class="identiti">Last Name : </span><span>breukh</span></span> <span class="edit">edit</span></p>
-                            <!-- <input class="input input-alt" placeholder="Last Name here... "  type="text"> -->
-                            <span class="input-border input-border-alt"></span>
-                        </div>
-                        <div class="group">
-                            <p class="form-group"><span><span class="identiti">Nickname : </span><span>breukh</span></span> <span class="edit">edit</span></p>
-                            <!-- <input class="input input-alt" placeholder="Nickname here... "  type="text"> -->
-                            <span class="input-border input-border-alt"></span>
-                        </div>
-                        <div class="group">
-                            <p class="form-group"><span><span class="identiti">Date of Birth : </span><span>15-02-2024</span></span> <span class="edit">edit</span></p>
-                            <!-- <input class="input input-alt" placeholder="Date of Birth ex: dd/mm/yyyy here... "  type="text"> -->
-                            <span class="input-border input-border-alt"></span>
-                        </div>
-                        <div class="group">
-                            <p class="form-group"><span><span class="identiti">Email : </span><span>breukh@gmail.com</span></span> <span class="edit">edit</span></p>
-                            <!-- <input class="input input-alt" placeholder="Email here... "  type="text"> -->
-                            <span class="input-border input-border-alt"></span>
-                        </div>
-                        <div class="group">
-                            <p class="form-group"><span><span class="identiti">About Me  : </span><span>breukh@gmail.com</span></span> <span class="edit">edit</span></p>
-                            <!-- <textarea class="input input-alt" placeholder="About Me here... " ></textarea> -->
-                            <span class="input-border input-border-alt"></span>
-                        </div>                
-                      </div>
-                      <div class="submit-update" >
-                        <button type="submit">update profile</button>
-                          
-                      </div>
-                </div>
-             </form>
+               
             </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed3.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>breukh</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed1.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>jack</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed7.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>robber</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed2.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>jackson</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+            <div class="bloc">
+                <a href="./profile.html"><img src="./images/feed4.png" alt=""></a>
+                
+                <div class="conte-unfollow">
+                    <h4>franck</h4>
+                    <span class="unfollow-btn"><i class="fa-solid fa-rectangle-xmark"></i>unfollow</span>
+                </div>
+            </div>
+
+       
+
+        </div>
+    </div>
 
 
     </section>
-
-
-</body>
+  </body>
 </html>
